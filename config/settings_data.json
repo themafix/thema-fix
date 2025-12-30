@@ -109,7 +109,7 @@
           "enable_sticky": true,
           "hide_on_scroll": false,
           "logo": "shopify://shop_images/Beige_and_Black_Minimalist_Skincare_Logo.png",
-          "logo_max_width": 230,
+          "logo_max_width": 150,
           "logo_mobile_max_width": 160,
           "menu": "main-menu",
           "sidebar_menu": "",
