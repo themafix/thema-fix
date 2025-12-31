@@ -136,6 +136,17 @@
     "testimonials_WKwbQx": {
       "type": "testimonials",
       "blocks": {
+        "testimonial_iXpcJh": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 4,
+            "author": "",
+            "title": "Will Order Again",
+            "content": "<p>“Beautifully made clothing and great attention to detail. I’ve already received compliments.”</p>"
+          }
+        },
         "testimonial_8Cf8jf": {
           "type": "testimonial",
           "settings": {
@@ -145,6 +156,17 @@
             "author": "Megan W. (Los Angeles)",
             "title": "Easy and quick!",
             "content": "<p>“This was my first time ordering here and everything went smoothly, from ordering to delivery and the products are worth the price. It’s nice to finally find a store I can trust.”</p>"
+          }
+        },
+        "testimonial_GwrVdP": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Emily b. (New York)",
+            "title": "Excellent value for money",
+            "content": "<p>“High quality products at fair prices. I'm glad I found this site and will definitely order again soon.”</p>"
           }
         },
         "testimonial_atKPTr": {
@@ -169,17 +191,6 @@
             "content": "<p>“Everything was perfect, just as I expected, exactly as described on the website.”</p>"
           }
         },
-        "testimonial_GwrVdP": {
-          "type": "testimonial",
-          "settings": {
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 5,
-            "author": "Emily b. (New York)",
-            "title": "Excellent value for money",
-            "content": "<p>“High quality products at fair prices. I'm glad I found this site and will definitely order again soon.”</p>"
-          }
-        },
         "testimonial_dyE34T": {
           "type": "testimonial",
           "settings": {
@@ -193,10 +204,11 @@
         }
       },
       "block_order": [
+        "testimonial_iXpcJh",
         "testimonial_8Cf8jf",
+        "testimonial_GwrVdP",
         "testimonial_atKPTr",
         "testimonial_f6ALiy",
-        "testimonial_GwrVdP",
         "testimonial_dyE34T"
       ],
       "settings": {
