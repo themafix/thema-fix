@@ -145,38 +145,47 @@
         "product_card_text_color": ""
       }
     },
-    "image-with-text-overlay": {
+    "image_with_text_overlay_J7UP3j": {
       "type": "image-with-text-overlay",
       "blocks": {
-        "1664424230c4756b0e-1": {
-          "type": "heading",
+        "subheading_HBjkVn": {
+          "type": "subheading",
           "settings": {
-            "text": "Wilsons New York",
-            "heading_tag": "h0"
+            "text": "Subheading"
           }
         },
-        "1664424230c4756b0e-2": {
+        "heading_AHryTL": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text overlay",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_f6nAcb": {
           "type": "richtext",
           "settings": {
-            "content": "<p>For lovers of smart casual clothing</p>"
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
           }
         }
       },
       "block_order": [
-        "1664424230c4756b0e-1",
-        "1664424230c4756b0e-2"
+        "subheading_HBjkVn",
+        "heading_AHryTL",
+        "richtext_f6nAcb"
       ],
+      "name": "Image with text overlay",
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/wilsonsnew_york_boutique.webp",
+        "image": "shopify://shop_images/haal-op-de-achtergrond-het-logo-weg-en-z_hG566IZmQO20qFaM-zfB-w_iL_eXY93T5uc_Xm7EeutNg.jpg",
+        "mobile_image": "shopify://shop_images/haal-op-de-achtergrond-het-logo-weg-en-z_hG566IZmQO20qFaM-zfB-w_iL_eXY93T5uc_Xm7EeutNg.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 20
+        "overlay_opacity": 30
       }
     },
     "collection_list_aW83Wd": {
@@ -418,7 +427,7 @@
     "slideshow_TJ8KBa",
     "collection-list",
     "featured-collection",
-    "image-with-text-overlay",
+    "image_with_text_overlay_J7UP3j",
     "collection_list_aW83Wd",
     "featured_collection_3Uqkx8",
     "media-grid",
