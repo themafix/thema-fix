@@ -231,6 +231,13 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "text_U7XWWJ": {
+            "type": "text",
+            "settings": {
+              "title": "Customer service",
+              "content": "<p><strong>Monday – Friday</strong> | 9 am - 5 pm</p><p><strong>Weekends</strong> | 10 am - 5 pm</p><p>If you have any questions or need assistance, please contact us at the email address provided below:</p><p>✉️ info@wilsonsnewyork.com</p><p><strong>★ ★ ★ ★ ★ </strong>(100,000+ satisfied customers)</p>"
+            }
+          },
           "text_ELTeBR": {
             "type": "text",
             "settings": {
@@ -254,20 +261,13 @@
               "menu": "policys",
               "show_menu_title": true
             }
-          },
-          "text_U7XWWJ": {
-            "type": "text",
-            "settings": {
-              "title": "Customer service",
-              "content": "<p><strong>Monday – Friday</strong> | 9 am - 5 pm</p><p><strong>Weekends</strong> | 10 am - 5 pm</p><p>If you have any questions or need assistance, please contact us at the email address provided below:</p><p>✉️ info@wilsonsnewyork.com</p><p><strong>★ ★ ★ ★ ★ </strong>(100,000+ satisfied customers)</p>"
-            }
           }
         },
         "block_order": [
+          "text_U7XWWJ",
           "text_ELTeBR",
           "newsletter",
-          "links_zwLmqU",
-          "text_U7XWWJ"
+          "links_zwLmqU"
         ],
         "settings": {
           "show_social_media": true,
