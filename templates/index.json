@@ -148,17 +148,11 @@
     "image_with_text_overlay_J7UP3j": {
       "type": "image-with-text-overlay",
       "blocks": {
-        "subheading_HBjkVn": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
         "heading_AHryTL": {
           "type": "heading",
           "settings": {
-            "text": "Image with text overlay",
-            "heading_tag": "h1"
+            "text": "About Wilsons New York",
+            "heading_tag": "h3"
           }
         },
         "richtext_f6nAcb": {
@@ -169,7 +163,6 @@
         }
       },
       "block_order": [
-        "subheading_HBjkVn",
         "heading_AHryTL",
         "richtext_f6nAcb"
       ],
