@@ -120,31 +120,6 @@
         "heading_gradient": ""
       }
     },
-    "featured-collection": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "apr-vrouwen",
-        "products": [],
-        "full_width": true,
-        "stack_products": false,
-        "show_progress_bar": false,
-        "products_count": 6,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 4,
-        "subheading": "",
-        "title": "New for Her",
-        "content": "",
-        "link_url": "",
-        "link_text": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
-    },
     "image_with_text_overlay_J7UP3j": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -181,74 +156,6 @@
         "overlay_opacity": 30
       }
     },
-    "collection_list_aW83Wd": {
-      "type": "collection-list",
-      "blocks": {
-        "collection_wAKWEj": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "Shirts",
-            "url": "shopify://collections/shirts-tees",
-            "heading_tag": "h3",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_f9D9pe": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "Polos",
-            "url": "shopify://collections/shirts-tees",
-            "heading_tag": "h3",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_TnBL8h": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "Sweaters",
-            "url": "shopify://collections/sweaters-new",
-            "heading_tag": "h3",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        }
-      },
-      "block_order": [
-        "collection_wAKWEj",
-        "collection_f9D9pe",
-        "collection_TnBL8h"
-      ],
-      "settings": {
-        "full_width": true,
-        "stack_collections": false,
-        "collections_per_row": 3,
-        "show_progress_bar": false,
-        "subheading": "",
-        "title": "SS25 Man",
-        "content": "",
-        "link_url": "shopify://collections/blazers-v-new",
-        "link_text": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
-      }
-    },
     "featured_collection_3Uqkx8": {
       "type": "featured-collection",
       "settings": {
@@ -261,7 +168,7 @@
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 4,
         "subheading": "",
-        "title": "New for Him",
+        "title": "Bestsellers",
         "content": "",
         "link_url": "shopify://collections/all",
         "link_text": "",
@@ -419,9 +326,7 @@
   "order": [
     "slideshow_TJ8KBa",
     "collection-list",
-    "featured-collection",
     "image_with_text_overlay_J7UP3j",
-    "collection_list_aW83Wd",
     "featured_collection_3Uqkx8",
     "media-grid",
     "faq"
