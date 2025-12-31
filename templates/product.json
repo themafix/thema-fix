@@ -163,10 +163,10 @@
           "settings": {
             "round_avatar": true,
             "show_rating": true,
-            "rating": 4,
+            "rating": 5,
             "author": "Emily b. (New York)",
-            "title": "So comfortable and flattering",
-            "content": "<p>Feels amazing on my skin and fits just right. Haven’t felt this confident in a while!</p>"
+            "title": "Excellent value for money",
+            "content": "<p>“High quality products at fair prices. I'm glad I found this site and will definitely order again soon.”</p>"
           }
         },
         "testimonial_f6ALiy": {
@@ -187,8 +187,8 @@
             "show_rating": true,
             "rating": 4,
             "author": "Lauren P. (Chicago)",
-            "title": "Lovely quality",
-            "content": "<p>Better than expected. The material feels premium and it looks even nicer than the photos.</p>"
+            "title": "Perfect fit",
+            "content": "<p>“The clothing fits perfectly and is very comfortable.”</p>"
           }
         }
       },
