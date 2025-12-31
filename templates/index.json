@@ -161,11 +161,11 @@
       "settings": {
         "collection": "luxe-sweaters",
         "products": [
+          "clara-autumn-blazer",
+          "bailey-sweater",
           "donna-elegant-turtleneck-sweater",
-          "emily-cable-knit-hoodie-sweater",
           "daisy-cashmere-sweater",
-          "ar-474",
-          "clara-autumn-blazer"
+          "emily-cable-knit-hoodie-sweater"
         ],
         "full_width": false,
         "stack_products": false,
