@@ -85,24 +85,11 @@
         "collection_8kjaBc": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "sets",
+            "image": "shopify://shop_images/Scherm_afbeelding_2025-12-31_om_13.55.31.png",
             "subheading": "",
-            "title": "Blazers",
+            "title": "SETS",
             "url": "shopify://collections/blazers-v-new",
-            "heading_tag": "h3",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_AYhnCe": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "Shorts",
-            "url": "shopify://collections/short-skirts-v-new",
             "heading_tag": "h3",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
@@ -114,8 +101,7 @@
       "block_order": [
         "collection_NFrXEB",
         "collection_7N9LJj",
-        "collection_8kjaBc",
-        "collection_AYhnCe"
+        "collection_8kjaBc"
       ],
       "settings": {
         "full_width": true,
