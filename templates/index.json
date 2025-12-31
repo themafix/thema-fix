@@ -53,20 +53,6 @@
     "collection-list": {
       "type": "collection-list",
       "blocks": {
-        "collection_7N9LJj": {
-          "type": "collection",
-          "settings": {
-            "collection": "luxe-sweaters",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
         "collection_NFrXEB": {
           "type": "collection",
           "settings": {
@@ -75,6 +61,21 @@
             "title": "JACKETS & BLAZERS",
             "url": "shopify://collections/dresses-v-new",
             "heading_tag": "h3",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_7N9LJj": {
+          "type": "collection",
+          "settings": {
+            "collection": "luxe-sweaters",
+            "image": "shopify://shop_images/Scherm_afbeelding_2025-12-31_om_13.48.25.png",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
@@ -111,8 +112,8 @@
         }
       },
       "block_order": [
-        "collection_7N9LJj",
         "collection_NFrXEB",
+        "collection_7N9LJj",
         "collection_8kjaBc",
         "collection_AYhnCe"
       ],
