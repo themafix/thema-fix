@@ -136,17 +136,6 @@
     "testimonials_WKwbQx": {
       "type": "testimonials",
       "blocks": {
-        "testimonial_iXpcJh": {
-          "type": "testimonial",
-          "settings": {
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 4,
-            "author": "",
-            "title": "Will Order Again",
-            "content": "<p>“Beautifully made clothing and great attention to detail. I’ve already received compliments.”</p>"
-          }
-        },
         "testimonial_8Cf8jf": {
           "type": "testimonial",
           "settings": {
@@ -156,6 +145,17 @@
             "author": "Megan W. (Los Angeles)",
             "title": "Easy and quick!",
             "content": "<p>“This was my first time ordering here and everything went smoothly, from ordering to delivery and the products are worth the price. It’s nice to finally find a store I can trust.”</p>"
+          }
+        },
+        "testimonial_iXpcJh": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 4,
+            "author": "",
+            "title": "Will Order Again",
+            "content": "<p>“Beautifully made clothing and great attention to detail. I’ve already received compliments.”</p>"
           }
         },
         "testimonial_GwrVdP": {
@@ -204,8 +204,8 @@
         }
       },
       "block_order": [
-        "testimonial_iXpcJh",
         "testimonial_8Cf8jf",
+        "testimonial_iXpcJh",
         "testimonial_GwrVdP",
         "testimonial_atKPTr",
         "testimonial_f6ALiy",
