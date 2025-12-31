@@ -216,6 +216,64 @@
         "testimonial_card_text_color": ""
       }
     },
+    "featured_collection_fFfDyi": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "apr-vrouwen",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 4,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "You may also like",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "image_with_text_overlay_9GPHYi": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_FCaFJc": {
+          "type": "heading",
+          "settings": {
+            "text": "Beyond Chic London",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_TraPNg": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>For lovers of smart casual clothing</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FCaFJc",
+        "richtext_TraPNg"
+      ],
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 10
+      }
+    },
     "faq_TaRiGA": {
       "type": "faq",
       "blocks": {
@@ -276,64 +334,6 @@
         "accordion_text_color": ""
       }
     },
-    "image_with_text_overlay_9GPHYi": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "heading_FCaFJc": {
-          "type": "heading",
-          "settings": {
-            "text": "Beyond Chic London",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_TraPNg": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>For lovers of smart casual clothing</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_FCaFJc",
-        "richtext_TraPNg"
-      ],
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 10
-      }
-    },
-    "featured_collection_fFfDyi": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "apr-vrouwen",
-        "products": [],
-        "full_width": true,
-        "stack_products": false,
-        "show_progress_bar": false,
-        "products_count": 4,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 3,
-        "subheading": "",
-        "title": "SS25",
-        "content": "",
-        "link_url": "",
-        "link_text": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
-    },
     "1738002897803478fa": {
       "type": "apps",
       "settings": {
@@ -354,9 +354,9 @@
   "order": [
     "main",
     "testimonials_WKwbQx",
-    "faq_TaRiGA",
-    "image_with_text_overlay_9GPHYi",
     "featured_collection_fFfDyi",
+    "image_with_text_overlay_9GPHYi",
+    "faq_TaRiGA",
     "1738002897803478fa"
   ]
 }
