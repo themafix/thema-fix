@@ -258,6 +258,7 @@
         "item-1",
         "image_GiUtXd"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "reduce_width": false,
@@ -305,6 +306,7 @@
         "166442457738b23caf-2",
         "item_i7Uw3z"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "subheading": "",
