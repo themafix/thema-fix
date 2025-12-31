@@ -162,10 +162,10 @@
         "collection": "luxe-sweaters",
         "products": [
           "clara-autumn-blazer",
-          "bailey-sweater",
           "donna-elegant-turtleneck-sweater",
-          "daisy-cashmere-sweater",
-          "emily-cable-knit-hoodie-sweater"
+          "bailey-sweater",
+          "emily-cable-knit-hoodie-sweater",
+          "daisy-cashmere-sweater"
         ],
         "full_width": false,
         "stack_products": false,
