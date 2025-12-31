@@ -159,9 +159,15 @@
     "featured_collection_3Uqkx8": {
       "type": "featured-collection",
       "settings": {
-        "collection": "apr-mannen",
-        "products": [],
-        "full_width": true,
+        "collection": "luxe-sweaters",
+        "products": [
+          "donna-elegant-turtleneck-sweater",
+          "emily-cable-knit-hoodie-sweater",
+          "daisy-cashmere-sweater",
+          "ar-474",
+          "clara-autumn-blazer"
+        ],
+        "full_width": false,
         "stack_products": false,
         "show_progress_bar": false,
         "products_count": 6,
