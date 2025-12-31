@@ -53,12 +53,26 @@
     "collection-list": {
       "type": "collection-list",
       "blocks": {
+        "collection_7N9LJj": {
+          "type": "collection",
+          "settings": {
+            "collection": "luxe-sweaters",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
         "collection_NFrXEB": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "every-day-jackets-blazers",
             "subheading": "",
-            "title": "Dresses",
+            "title": "JACKETS & BLAZERS",
             "url": "shopify://collections/dresses-v-new",
             "heading_tag": "h3",
             "text_position": "place-self-center text-center",
@@ -97,6 +111,7 @@
         }
       },
       "block_order": [
+        "collection_7N9LJj",
         "collection_NFrXEB",
         "collection_8kjaBc",
         "collection_AYhnCe"
