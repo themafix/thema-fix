@@ -231,21 +231,21 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "text_ELTeBR": {
+            "type": "text",
+            "settings": {
+              "title": "Information",
+              "content": "<p>✔ We have been providing the best service to our customers for over 8 years.<br/><br/>✔ Free, fast shipping with UPS.<br/><br/>✔ Easy returns within 30 days.<br/><br/>✔ 100% secure payment.</p>"
+            }
+          },
           "newsletter": {
             "type": "newsletter",
             "settings": {
               "image": "{{shop.brand.logo}}",
               "image_width": 150,
-              "heading_size": "h3",
+              "heading_size": "h6",
               "title": "Get a chance to win $100 shopping credit",
               "content": "<p>Every month we give $100 to one of our loyal Winstons New York customers!</p>"
-            }
-          },
-          "links": {
-            "type": "links",
-            "settings": {
-              "menu": "",
-              "show_menu_title": true
             }
           },
           "links_zwLmqU": {
@@ -264,8 +264,8 @@
           }
         },
         "block_order": [
+          "text_ELTeBR",
           "newsletter",
-          "links",
           "links_zwLmqU",
           "text_U7XWWJ"
         ],
