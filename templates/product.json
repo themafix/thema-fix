@@ -302,15 +302,15 @@
         "item_XDfKQt": {
           "type": "item",
           "settings": {
-            "title": "Free premium shipping",
-            "content": "<p>We ship all our orders within the UK with Royal Mail. Do you order before 11 PM? Then your parcel will be sent the next day free of charge. So you will receive your order quickly and without extra costs!</p>"
+            "title": "Do you offer free shipping?",
+            "content": "<p>Yes only today we offer free U.S. shipping on all orders. No hidden fees, no surprises at checkout. You'll see the full breakdown before you pay.</p>"
           }
         },
         "item_7UVMKz": {
           "type": "item",
           "settings": {
-            "title": "Returns",
-            "content": "<p>Not quite satisfied? No worries! You can easily and quickly return your order within 30 days of receipt. We make sure the process goes smoothly, so you don't have to worry.</p>"
+            "title": "What is the Return Policy?",
+            "content": "<p>You can return items within <strong>30 calendar days</strong> of receiving them.</p><ul><li>Return shipping costs are the buyer’s responsibility.</li><li>Approved refunds will be issued to your original payment method.<br/></li></ul><p>For more information, please review our <strong>RETURN POLICY</strong></p>"
           }
         },
         "item_ji9gab": {
