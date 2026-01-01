@@ -299,18 +299,18 @@
     "faq_TaRiGA": {
       "type": "faq",
       "blocks": {
-        "item_rnViBT": {
-          "type": "item",
-          "settings": {
-            "title": "How do I track my order?",
-            "content": "<p>Once your order is confirmed, you will receive an email with your order number. To track your order, simply visit our <strong>ORDER TRACKING</strong> page and enter your order number or email address.</p>"
-          }
-        },
         "item_XDfKQt": {
           "type": "item",
           "settings": {
             "title": "Do you offer free shipping?",
             "content": "<p>Yes only today we offer free U.S. shipping on all orders. No hidden fees, no surprises at checkout. You'll see the full breakdown before you pay.</p>"
+          }
+        },
+        "item_rnViBT": {
+          "type": "item",
+          "settings": {
+            "title": "How do I track my order?",
+            "content": "<p>Once your order is confirmed, you will receive an email with your order number. To track your order, simply visit our <strong>ORDER TRACKING</strong> page and enter your order number or email address.</p>"
           }
         },
         "item_7UVMKz": {
@@ -336,8 +336,8 @@
         }
       },
       "block_order": [
-        "item_rnViBT",
         "item_XDfKQt",
+        "item_rnViBT",
         "item_7UVMKz",
         "item_ji9gab",
         "item_B3Pgdw"
