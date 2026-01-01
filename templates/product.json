@@ -316,14 +316,14 @@
         "item_ji9gab": {
           "type": "item",
           "settings": {
-            "title": "Size",
+            "title": "How can I make sure it will fit me properly?",
             "content": "<p>Our clothes fit exactly as indicated in the size chart. You will find the size chart with each product, so you can always choose the right size and be sure it fits perfectly.</p>"
           }
         },
         "item_B3Pgdw": {
           "type": "item",
           "settings": {
-            "title": "Need more help?",
+            "title": "I Have an Issue With My Order. How Can I Contact You?",
             "content": "<p>Have a question or need advice? Don’t hesitate to contact us. We are here to assist you and provide expert guidance.<br/><br/>Email: info@wilsonsnewyork.com<br/><br/>Mon / Fri 09:00 - 17:00</p><p>Sat / Sun 10:00 - 17:00</p>"
           }
         }
