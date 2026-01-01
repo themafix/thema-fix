@@ -240,7 +240,15 @@
       "type": "featured-collection",
       "settings": {
         "collection": "apr-vrouwen",
-        "products": [],
+        "products": [
+          "ar-474",
+          "betty-robe-en-camel",
+          "aurora",
+          "camrynnne",
+          "clara-comfy-shoes-limited-edition",
+          "clara-cozy-sneakers",
+          "elena-warm-knitted-ladies-turtleneck"
+        ],
         "full_width": true,
         "stack_products": false,
         "show_progress_bar": false,
