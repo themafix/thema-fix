@@ -105,6 +105,7 @@
       },
       "header": {
         "type": "header",
+        "custom_css": [],
         "settings": {
           "enable_sticky": true,
           "hide_on_scroll": false,
