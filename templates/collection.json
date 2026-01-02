@@ -35,6 +35,8 @@
       "name": "Hot spots",
       "settings": {
         "full_width": true,
+        "image": "shopify://shop_images/foto_collectie.png",
+        "mobile_image": "shopify://shop_images/foto_collectie.png",
         "title": "",
         "content": "",
         "button_text": "",
