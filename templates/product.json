@@ -279,6 +279,41 @@
         "product_card_text_color": ""
       }
     },
+    "media_with_text_nrQQVY": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_hCMDFt": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "",
+            "content": "<h4>Handcrafted with love ♥</h4><p>Every design at Clara’s Boutique is handcrafted and created with timeless elegance, inspired by the sewing and craftsmanship we learned from our mother. For over 26 years, we have honored her legacy by creating handmade fashion that helps women feel confident, comfortable, and beautifully themselves.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#000000",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_hCMDFt"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "enable_parallax": true,
+        "spacing": "small"
+      }
+    },
     "image_with_text_overlay_9GPHYi": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -403,6 +438,7 @@
     "main",
     "testimonials_WKwbQx",
     "featured_collection_fFfDyi",
+    "media_with_text_nrQQVY",
     "image_with_text_overlay_9GPHYi",
     "faq_TaRiGA",
     "1738002897803478fa"
