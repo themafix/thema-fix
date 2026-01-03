@@ -319,7 +319,7 @@
       ],
       "name": "s-bullet-points-1",
       "settings": {
-        "custom_display": false,
+        "custom_display": true,
         "bullet_text_color": "#000000",
         "background_color": "transparent",
         "border_color": "#000000",
