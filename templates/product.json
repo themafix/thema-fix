@@ -309,7 +309,8 @@
         "bullet_NLyz6e": {
           "type": "bullet",
           "settings": {
-            "bullet_text": "Betaal veilig met iDeal & Bancontact",
+            "bullet_icon": "shopify://shop_images/heart_icon_25689347-cc3e-470a-b1f3-fddf6f165a70.jpg",
+            "bullet_text": "More than 100,000 satisfied customers",
             "bullet_text_color": "#000000"
           }
         }
