@@ -301,7 +301,8 @@
         "bullet_9QyDyc": {
           "type": "bullet",
           "settings": {
-            "bullet_text": "14 dagen retourgarantie",
+            "bullet_icon": "shopify://shop_images/cinkje.png",
+            "bullet_text": "30-Day Money-Back Guarantee",
             "bullet_text_color": "#000000"
           }
         },
