@@ -37,7 +37,7 @@
         "liquid_RVaAfm": {
           "type": "liquid",
           "settings": {
-            "liquid": ""
+            "liquid": "<div id='s-bullet-points-1'></div>"
           }
         },
         "rating": {
@@ -286,6 +286,89 @@
         "product_card_text_color": ""
       }
     },
+    "s_bullet_points_1_qWJXUy": {
+      "type": "s-bullet-points-1",
+      "blocks": {
+        "bullet_H7CwwU": {
+          "type": "bullet",
+          "settings": {
+            "bullet_text": "Gratis verzending met PostNL & Bpost",
+            "bullet_text_color": "#000000"
+          }
+        },
+        "bullet_9QyDyc": {
+          "type": "bullet",
+          "settings": {
+            "bullet_text": "14 dagen retourgarantie",
+            "bullet_text_color": "#000000"
+          }
+        },
+        "bullet_NLyz6e": {
+          "type": "bullet",
+          "settings": {
+            "bullet_text": "Betaal veilig met iDeal & Bancontact",
+            "bullet_text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "bullet_H7CwwU",
+        "bullet_9QyDyc",
+        "bullet_NLyz6e"
+      ],
+      "name": "s-bullet-points-1",
+      "settings": {
+        "custom_display": false,
+        "bullet_text_color": "#000000",
+        "background_color": "transparent",
+        "border_color": "#000000",
+        "full_width": false,
+        "custom_width": "max-content",
+        "sec_mx_width": 440,
+        "cont_align": "start",
+        "direction": "column",
+        "items_align": "flex-start",
+        "items_justify": "flex-start",
+        "gap_between_blocks": 10,
+        "direction_mob": "column",
+        "items_align_mob": "flex-start",
+        "items_justify_mob": "flex-start",
+        "gap_between_blocks_mob": 10,
+        "item_align": "center",
+        "icon_text_gap": 10,
+        "item_flex": "0 0 auto",
+        "item_min_width": 0,
+        "item_align_mob": "center",
+        "icon_text_gap_mob": 8,
+        "item_flex_mob": "0 0 auto",
+        "item_min_width_mob": 0,
+        "icon_size": 24,
+        "icon_size_mob": 20,
+        "bullet_font_size": 16,
+        "bullet_font_weight": 400,
+        "bullet_line_height": 1.3,
+        "bullet_letter_spacing": 0,
+        "bullet_text_transform": "none",
+        "bullet_font_size_mob": 14,
+        "bullet_line_height_mob": 1.3,
+        "bullet_letter_spacing_mob": 0,
+        "border_thickness": 0,
+        "border_radius": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 10,
+        "margin_bottom": 10,
+        "border_radius_mob": 0,
+        "padding_top_mob": 0,
+        "padding_bottom_mob": 0,
+        "padding_left_mob": 0,
+        "padding_right_mob": 0,
+        "margin_top_mob": 10,
+        "margin_bottom_mob": 10
+      }
+    },
     "media_with_text_nrQQVY": {
       "type": "media-with-text",
       "blocks": {
@@ -439,89 +522,6 @@
         "review_header_text_color": "#000000",
         "review_button_background": "#000000",
         "review_button_text_color": "#ffffff"
-      }
-    },
-    "s_bullet_points_1_qWJXUy": {
-      "type": "s-bullet-points-1",
-      "blocks": {
-        "bullet_H7CwwU": {
-          "type": "bullet",
-          "settings": {
-            "bullet_text": "Gratis verzending met PostNL & Bpost",
-            "bullet_text_color": "#000000"
-          }
-        },
-        "bullet_9QyDyc": {
-          "type": "bullet",
-          "settings": {
-            "bullet_text": "14 dagen retourgarantie",
-            "bullet_text_color": "#000000"
-          }
-        },
-        "bullet_NLyz6e": {
-          "type": "bullet",
-          "settings": {
-            "bullet_text": "Betaal veilig met iDeal & Bancontact",
-            "bullet_text_color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "bullet_H7CwwU",
-        "bullet_9QyDyc",
-        "bullet_NLyz6e"
-      ],
-      "name": "s-bullet-points-1",
-      "settings": {
-        "custom_display": false,
-        "bullet_text_color": "#000000",
-        "background_color": "transparent",
-        "border_color": "#000000",
-        "full_width": false,
-        "custom_width": "max-content",
-        "sec_mx_width": 440,
-        "cont_align": "start",
-        "direction": "column",
-        "items_align": "flex-start",
-        "items_justify": "flex-start",
-        "gap_between_blocks": 10,
-        "direction_mob": "column",
-        "items_align_mob": "flex-start",
-        "items_justify_mob": "flex-start",
-        "gap_between_blocks_mob": 10,
-        "item_align": "center",
-        "icon_text_gap": 10,
-        "item_flex": "0 0 auto",
-        "item_min_width": 0,
-        "item_align_mob": "center",
-        "icon_text_gap_mob": 8,
-        "item_flex_mob": "0 0 auto",
-        "item_min_width_mob": 0,
-        "icon_size": 24,
-        "icon_size_mob": 20,
-        "bullet_font_size": 16,
-        "bullet_font_weight": 400,
-        "bullet_line_height": 1.3,
-        "bullet_letter_spacing": 0,
-        "bullet_text_transform": "none",
-        "bullet_font_size_mob": 14,
-        "bullet_line_height_mob": 1.3,
-        "bullet_letter_spacing_mob": 0,
-        "border_thickness": 0,
-        "border_radius": 0,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_left": 0,
-        "padding_right": 0,
-        "margin_top": 10,
-        "margin_bottom": 10,
-        "border_radius_mob": 0,
-        "padding_top_mob": 0,
-        "padding_bottom_mob": 0,
-        "padding_left_mob": 0,
-        "padding_right_mob": 0,
-        "margin_top_mob": 10,
-        "margin_bottom_mob": 10
       }
     }
   },
