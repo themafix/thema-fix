@@ -91,7 +91,7 @@
         "liquid_rEbM49": {
           "type": "liquid",
           "settings": {
-            "liquid": "<style>\n    .selluxe_sale_announcement_dD9PaQ--custom-container {\n      background: #fbeae5 !important;\n      color: #b0272c;\n      border-radius: 4px;\n      text-align:left;\n      display:flex;\n      align-items:center;\n      gap:10px;\n      margin-top:0px !important;\n      margin-bottom:24px !important;\n      padding-top:12px;\n      padding-bottom:12px;\n      padding-left:12px;\n      padding-right:12px;\n    }\n    .selluxe_sale_announcement_dD9PaQ--custom-container .custom-icon {\n      height:25px;\n      width:25px;\n    }\n    .selluxe_sale_announcement_dD9PaQ--custom-container .text-container{\n      width:100%;\n      text-align: left;\n    }\n \n   .selluxe_sale_announcement_dD9PaQ--custom-container .text-container .sale-text>*{\n      font-size:16px !important;\n      line-height: 1.2rem;\n      margin:0;\n    }\n</style><div class=\"selluxe_sale_announcement_dD9PaQ--custom-container\">\n \n  <div class=\"text-container\">\n   \n    <span class=\"sale-text\"><p><strong>ANNIVERSARY SALE UPDATE </strong>: Due to high demand during our 8-year anniversary sale, only a few units are in stock! If you can still click <strong>'Add to Cart,</strong>' it’s still available.</p></span>\n  </div>\n</div>"
+            "liquid": "<style>\n    .selluxe_sale_announcement_dD9PaQ--custom-container {\n      background: #fbeae5 !important;\n      color: #b0272c;\n      border-radius: 4px;\n      text-align:left;\n      display:flex;\n      align-items:center;\n      gap:10px;\n      margin-top:0px !important;\n      margin-bottom:24px !important;\n      padding-top:12px;\n      padding-bottom:12px;\n      padding-left:12px;\n      padding-right:12px;\n    }\n    .selluxe_sale_announcement_dD9PaQ--custom-container .custom-icon {\n      height:25px;\n      width:25px;\n    }\n    .selluxe_sale_announcement_dD9PaQ--custom-container .text-container{\n      width:100%;\n      text-align: left;\n    }\n \n   .selluxe_sale_announcement_dD9PaQ--custom-container .text-container .sale-text>*{\n      font-size:16px !important;\n      line-height: 1.2rem;\n      margin:0;\n    }\n</style><div class=\"selluxe_sale_announcement_dD9PaQ--custom-container\">\n \n  <div class=\"text-container\">\n   \n    <span class=\"sale-text\"><p><strong>ANNIVERSARY SALE UPDATE </strong>: Due to high demand during our 10-year anniversary sale, only a few units are in stock! If you can still click <strong>'Add to Cart,</strong>' it’s still available.</p></span>\n  </div>\n</div>"
           }
         },
         "feature_rating_e9piMR": {
@@ -324,7 +324,7 @@
       "settings": {
         "custom_display": true,
         "bullet_text_color": "#000000",
-        "background_color": "transparent",
+        "background_color": "rgba(0,0,0,0)",
         "border_color": "#000000",
         "full_width": false,
         "custom_width": "max-content",
