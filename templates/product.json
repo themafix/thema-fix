@@ -28,6 +28,12 @@
             "show_taxes_notice": false
           }
         },
+        "liquid_x7qy3K": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div id='s-price-layout-1'></div>"
+          }
+        },
         "liquid_RVaAfm": {
           "type": "liquid",
           "settings": {
@@ -126,6 +132,7 @@
         "title",
         "badges",
         "price",
+        "liquid_x7qy3K",
         "liquid_RVaAfm",
         "liquid_NQ9rBP",
         "rating",
