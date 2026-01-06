@@ -15,7 +15,6 @@
     },
     "contact_RCge94": {
       "type": "contact",
-      "disabled": true,
       "name": "Contact form",
       "settings": {
         "full_width": true,
