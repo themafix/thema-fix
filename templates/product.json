@@ -22,12 +22,6 @@
           "type": "badges",
           "settings": {}
         },
-        "price": {
-          "type": "price",
-          "settings": {
-            "show_taxes_notice": false
-          }
-        },
         "liquid_x7qy3K": {
           "type": "liquid",
           "settings": {
@@ -131,7 +125,6 @@
       "block_order": [
         "title",
         "badges",
-        "price",
         "liquid_x7qy3K",
         "liquid_RVaAfm",
         "liquid_NQ9rBP",
