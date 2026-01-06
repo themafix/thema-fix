@@ -13,7 +13,7 @@
       "type": "main-page",
       "settings": {}
     },
-    "contact_RCge94": {
+    "contact_7T4naR": {
       "type": "contact",
       "name": "Contact form",
       "settings": {
@@ -37,6 +37,6 @@
   },
   "order": [
     "main",
-    "contact_RCge94"
+    "contact_7T4naR"
   ]
 }
