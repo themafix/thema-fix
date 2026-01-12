@@ -96,6 +96,7 @@
         },
         "feature_rating_e9piMR": {
           "type": "feature-rating",
+          "disabled": true,
           "settings": {
             "heading": "Fit",
             "segments": 5,
