@@ -427,7 +427,8 @@
         "pay_now_button_label": "Complete Order"
       },
       "shop_policies": {
-        "refund_policy": " Refund policy"
+        "refund_policy": " Refund policy",
+        "legal_notice": " "
       }
     }
   },
