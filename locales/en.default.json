@@ -421,7 +421,8 @@
     "checkout": {
       "order_summary": {
         "enter_shipping_address": "FREE",
-        "subtotal_label": "Total"
+        "subtotal_label": "Total",
+        "shipping_label": "."
       },
       "general": {
         "pay_now_button_label": "Complete Order"
