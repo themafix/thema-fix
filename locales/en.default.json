@@ -422,7 +422,7 @@
       "order_summary": {
         "enter_shipping_address": "FREE",
         "subtotal_label": "Total",
-        "shipping_label": "."
+        "shipping_policy_link": "."
       },
       "general": {
         "pay_now_button_label": "Complete Order"
