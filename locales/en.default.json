@@ -430,6 +430,9 @@
         "refund_policy": " Refund policy",
         "legal_notice": " ",
         "shipping_policy": " "
+      },
+      "shipping_errors": {
+        "empty_state": "Free Premium Shipping + Track & Trace"
       }
     }
   },
