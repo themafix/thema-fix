@@ -420,7 +420,7 @@
     },
     "checkout": {
       "order_summary": {
-        "enter_shipping_address": "FREE",
+        "enter_shipping_address": "Free premium shipping",
         "subtotal_label": "Total"
       },
       "general": {
