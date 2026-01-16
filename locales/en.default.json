@@ -421,7 +421,7 @@
     "checkout": {
       "order_summary": {
         "enter_shipping_address": "Free premium shipping",
-        "subtotal_label": "Total"
+        "subtotal_label": "Subtotal"
       },
       "general": {
         "pay_now_button_label": "Complete Order"
