@@ -466,7 +466,7 @@
             "image": "shopify://shop_images/foto_pakket_inpakken.png",
             "media_width": 50,
             "media_position": "start",
-            "text_position": "place-self-center text-center",
+            "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
