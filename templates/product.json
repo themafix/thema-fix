@@ -307,7 +307,7 @@
         "bullet_H7CwwU": {
           "type": "bullet",
           "settings": {
-            "bullet_icon": "shopify://shop_images/truck.png",
+            "bullet_icon": "shopify://shop_images/download.png",
             "bullet_text": "Free Shipping with UPS",
             "bullet_text_color": "#000000"
           }
