@@ -281,11 +281,12 @@
         "collection": "apr-vrouwen",
         "products": [
           "ar-474",
+          "charlotte",
+          "pamela",
           "clara-comfy-shoes-limited-edition",
           "aurora",
           "camrynnne",
-          "clara-cozy-sneakers",
-          "pamela"
+          "clara-cozy-sneakers"
         ],
         "full_width": true,
         "stack_products": false,
