@@ -99,21 +99,6 @@
     "collection-list": {
       "type": "collection-list",
       "blocks": {
-        "collection_NFrXEB": {
-          "type": "collection",
-          "settings": {
-            "collection": "every-day-jackets-blazers",
-            "image": "shopify://shop_images/Scherm_afbeelding_2026-01-25_om_16.06.00.png",
-            "subheading": "",
-            "title": "JACKETS & BLAZERS",
-            "url": "shopify://collections/every-day-jackets-blazers",
-            "heading_tag": "h4",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
         "collection_7N9LJj": {
           "type": "collection",
           "settings": {
@@ -122,6 +107,21 @@
             "subheading": "",
             "title": "",
             "url": "shopify://collections/luxe-sweaters",
+            "heading_tag": "h4",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_NFrXEB": {
+          "type": "collection",
+          "settings": {
+            "collection": "every-day-jackets-blazers",
+            "image": "shopify://shop_images/Scherm_afbeelding_2026-01-25_om_16.06.00.png",
+            "subheading": "",
+            "title": "JACKETS & BLAZERS",
+            "url": "shopify://collections/every-day-jackets-blazers",
             "heading_tag": "h4",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
@@ -146,8 +146,8 @@
         }
       },
       "block_order": [
-        "collection_NFrXEB",
         "collection_7N9LJj",
+        "collection_NFrXEB",
         "collection_8kjaBc"
       ],
       "settings": {
