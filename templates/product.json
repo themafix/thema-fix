@@ -25,6 +25,10 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "bf_size_charts_block_Beedk8": {
+          "type": "shopify://apps/bf-size-charts/blocks/block/47ee4f2e-eb5e-41af-9beb-e2786646bf2a",
+          "settings": {}
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -137,6 +141,7 @@
         }
       },
       "block_order": [
+        "bf_size_charts_block_Beedk8",
         "title",
         "badges",
         "liquid_x7qy3K",
