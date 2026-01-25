@@ -514,6 +514,7 @@
         "heading_FCaFJc",
         "richtext_TraPNg"
       ],
+      "disabled": true,
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
