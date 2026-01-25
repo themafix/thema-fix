@@ -282,8 +282,7 @@
         "products": [
           "ar-474",
           "charlotte",
-          "pamela",
-          "aurora"
+          "pamela"
         ],
         "full_width": true,
         "stack_products": false,
@@ -472,7 +471,7 @@
             "icon_width": 48,
             "subheading": "",
             "title": "Celebrate our anniversary in style",
-            "content": "<p>For more than 10 years, we’ve carefully designed and curated fashion pieces — handcrafted with love to empower women with timeless elegance and effortless style. Now, we’re celebrating our anniversary with exclusive discounts across all collections.</p><p>It’s the perfect moment to discover your next favorite piece — from winter staples to fall must-haves. But hurry, these anniversary savings are only available for a limited time.</p><p><strong>Thank you for your support!</strong></p><p>With love,<br/>— The sisters Madison & Lauren</p>",
+            "content": "<p>For more than 10 years, we’ve carefully designed and curated fashion pieces inspired by the sewing and craftsmanship we learned from our mother. — handcrafted with love to empower women with timeless elegance and effortless style. Now, we’re celebrating our anniversary with exclusive discounts across all collections.</p><p>we have honored her legacy by creating handmade fashion that helps women feel confident, comfortable, and beautifully themselves.</p><p>It’s the perfect moment to discover your next favorite piece — from winter staples to fall must-haves. But hurry, these anniversary savings are only available for a limited time.</p><p><strong>Thank you for your support!</strong></p><p>With love,<br/>— The sisters Madison & Lauren</p>",
             "link_text": "",
             "link_url": "",
             "background": "#ffffff",
