@@ -129,15 +129,14 @@
             "overlay_opacity": 30
           }
         },
-        "collection_8kjaBc": {
+        "collection_PV4war": {
           "type": "collection",
           "settings": {
-            "collection": "sets",
-            "image": "shopify://shop_images/Scherm_afbeelding_2026-01-25_om_16.03.01.png",
+            "collection": "winter-dresses",
             "subheading": "",
-            "title": "SETS",
-            "url": "shopify://collections/sets",
-            "heading_tag": "h3",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
@@ -148,7 +147,7 @@
       "block_order": [
         "collection_7N9LJj",
         "collection_NFrXEB",
-        "collection_8kjaBc"
+        "collection_PV4war"
       ],
       "settings": {
         "full_width": true,
