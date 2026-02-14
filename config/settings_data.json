@@ -52,7 +52,6 @@
         "blocks": {
           "message": {
             "type": "message",
-            "disabled": true,
             "settings": {
               "text": "ANNIVERSARY SALE, EVERYTHING MUST GO",
               "url": ""
