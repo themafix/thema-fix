@@ -52,50 +52,15 @@
         "blocks": {
           "message": {
             "type": "message",
-            "settings": {
-              "text": "ANNIVERSARY SALE, EVERYTHING MUST GO",
-              "url": ""
-            }
-          },
-          "message_GNqkFX": {
-            "type": "message",
             "disabled": true,
             "settings": {
-              "text": "TRUSTED BY 100k+ HAPPY CUSTOMERS",
-              "url": ""
-            }
-          },
-          "message_CGMRrw": {
-            "type": "message",
-            "disabled": true,
-            "settings": {
-              "text": "LIMITED STOCK, ONCE IT'S GONE, IT'S GONE",
-              "url": ""
-            }
-          },
-          "message_qaTgBz": {
-            "type": "message",
-            "disabled": true,
-            "settings": {
-              "text": "100% MONEY BACK GUARANTEE",
-              "url": ""
-            }
-          },
-          "message_3aWaUe": {
-            "type": "message",
-            "disabled": true,
-            "settings": {
-              "text": "ONLY TODAY FREE PREMIUM SHIPPING",
+              "text": "ANNIVERSARY SALE ENDS TODAY | UP TO 80% OFF!",
               "url": ""
             }
           }
         },
         "block_order": [
-          "message",
-          "message_GNqkFX",
-          "message_CGMRrw",
-          "message_qaTgBz",
-          "message_3aWaUe"
+          "message"
         ],
         "settings": {
           "enable_sticky": false,
