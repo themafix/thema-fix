@@ -52,7 +52,6 @@
         "blocks": {
           "message": {
             "type": "message",
-            "disabled": true,
             "settings": {
               "text": "ANNIVERSARY SALE ENDS TODAY | UP TO 80% OFF!",
               "url": ""
