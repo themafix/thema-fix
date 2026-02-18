@@ -540,18 +540,11 @@
             "content": "<p>Yes only today we offer free U.S. shipping + Track & Trace, on all orders. No hidden fees, no surprises at checkout. You'll see the full breakdown before you pay.</p>"
           }
         },
-        "item_cktVHb": {
+        "item_TBHqLt": {
           "type": "item",
           "settings": {
-            "title": "Will I receive a confirmation email after placing an order?",
-            "content": "<p>Yes, once you've placed your order, a confirmation will be sent to your email inbox. If you don’t see it, feel free to reach out to our customer service team, we’re happy to help you right away.<br/><br/>Email: info@wilsons-newyork.com</p>"
-          }
-        },
-        "item_7UVMKz": {
-          "type": "item",
-          "settings": {
-            "title": "Can I return the item(s) if I don’t like them?",
-            "content": "<p>Yes, you can return your order within 30 days of receiving it.</p>"
+            "title": "What payment methods do you accept?",
+            "content": "<p>You can check out securely using: <strong>Credit card, Visa, Mastercard, American Express, Apple Pay, Google Pay, Maestro, and Shop Pay.</strong></p>"
           }
         },
         "item_rnViBT": {
@@ -561,11 +554,11 @@
             "content": "<p>Once your order is confirmed, you will receive an email with your order number. To track your order, simply visit our <a href=\"https://wilsons-newyork.com/apps/parcelpanel\" title=\"https://wilsons-newyork.com/apps/parcelpanel\"><strong>Order Tracking</strong></a><strong> </strong>page and enter your order number or email address.</p>"
           }
         },
-        "item_TBHqLt": {
+        "item_7UVMKz": {
           "type": "item",
           "settings": {
-            "title": "What payment methods do you accept?",
-            "content": "<p>You can check out securely using: <strong>Credit card, Visa, Mastercard, American Express, Apple Pay, Google Pay, Maestro, and Shop Pay.</strong></p>"
+            "title": "Can I return the item(s) if I don’t like them?",
+            "content": "<p>Yes, you can return your order within 30 days of receiving it.</p>"
           }
         },
         "item_ji9gab": {
@@ -577,20 +570,28 @@
         },
         "item_B3Pgdw": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "title": "I have an issue with my order, how can I contact you?",
             "content": "<p>Our customer support team is always happy to help. You can reach us through the Contact Page or by email at info@wilsons-newyork.com. We usually reply within <strong>24 hours</strong>.</p>"
+          }
+        },
+        "item_cktVHb": {
+          "type": "item",
+          "settings": {
+            "title": "Will I receive a confirmation email after placing an order?",
+            "content": "<p>Yes, once you've placed your order, a confirmation will be sent to your email inbox. If you don’t see it, feel free to reach out to our customer service team, we’re happy to help you right away.<br/><br/>Email: info@wilsons-newyork.com</p>"
           }
         }
       },
       "block_order": [
         "item_XDfKQt",
-        "item_cktVHb",
-        "item_7UVMKz",
-        "item_rnViBT",
         "item_TBHqLt",
+        "item_rnViBT",
+        "item_7UVMKz",
         "item_ji9gab",
-        "item_B3Pgdw"
+        "item_B3Pgdw",
+        "item_cktVHb"
       ],
       "settings": {
         "full_width": true,
