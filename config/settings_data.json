@@ -132,8 +132,8 @@
             "settings": {
               "icon": "picto-box",
               "custom_icon": "shopify://shop_images/Scherm_afbeelding_2026-02-18_om_21.38.37.png",
-              "mobile_icon_width": 68,
-              "icon_width": 68,
+              "mobile_icon_width": 96,
+              "icon_width": 96,
               "icon_background_type": "none",
               "icon_background": "",
               "icon_color": "",
