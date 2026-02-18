@@ -114,20 +114,6 @@
             "overlay_opacity": 30
           }
         },
-        "collection_VthjXi": {
-          "type": "collection",
-          "settings": {
-            "collection": "bags",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
         "collection_PV4war": {
           "type": "collection",
           "settings": {
@@ -141,12 +127,26 @@
             "overlay_color": "#000000",
             "overlay_opacity": 30
           }
+        },
+        "collection_VthjXi": {
+          "type": "collection",
+          "settings": {
+            "collection": "bags",
+            "subheading": "",
+            "title": "",
+            "url": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
         }
       },
       "block_order": [
         "collection_7N9LJj",
-        "collection_VthjXi",
-        "collection_PV4war"
+        "collection_PV4war",
+        "collection_VthjXi"
       ],
       "settings": {
         "full_width": true,
