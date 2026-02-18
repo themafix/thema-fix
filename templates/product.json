@@ -540,25 +540,11 @@
             "content": "<p>Yes only today we offer free U.S. shipping + Track & Trace, on all orders. No hidden fees, no surprises at checkout. You'll see the full breakdown before you pay.</p>"
           }
         },
-        "item_DejtGR": {
+        "item_ji9gab": {
           "type": "item",
           "settings": {
-            "title": "How long does shipping take?",
-            "content": "<p>Orders are typically processed within <strong>1 to</strong> <strong>3 business days </strong>after being placed.</p>"
-          }
-        },
-        "item_87zhVk": {
-          "type": "item",
-          "settings": {
-            "title": "Question",
-            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
-          }
-        },
-        "item_TBHqLt": {
-          "type": "item",
-          "settings": {
-            "title": "What payment methods do you accept?",
-            "content": "<p>You can check out securely using: <strong>Credit card, Visa, Mastercard, American Express, Apple Pay, Google Pay, Maestro, and Shop Pay.</strong></p>"
+            "title": "How can I make sure it will fit me properly?",
+            "content": "<p>Each product page includes a detailed size chart to help you find your perfect fit. We always recommend comparing the chart to a similar item you already own.</p><p>If you’re in between sizes, we generally recommend sizing up for the most comfortable fit. Still unsure? Our support team is happy to help you choose the right size!</p>"
           }
         },
         "item_rnViBT": {
@@ -568,18 +554,18 @@
             "content": "<p>Once your order is confirmed, you will receive an email with your order number. To track your order, simply visit our <a href=\"https://wilsons-newyork.com/apps/parcelpanel\" title=\"https://wilsons-newyork.com/apps/parcelpanel\"><strong>Order Tracking</strong></a><strong> </strong>page and enter your order number or email address.</p>"
           }
         },
+        "item_TBHqLt": {
+          "type": "item",
+          "settings": {
+            "title": "What payment methods do you accept?",
+            "content": "<p>You can check out securely using: <strong>Credit card, Visa, Mastercard, American Express, Apple Pay, Google Pay, Maestro, and Shop Pay.</strong></p>"
+          }
+        },
         "item_7UVMKz": {
           "type": "item",
           "settings": {
             "title": "Can I return the item(s) if I don’t like them?",
             "content": "<p>Yes, you can return your order within 30 days of receiving it.</p>"
-          }
-        },
-        "item_ji9gab": {
-          "type": "item",
-          "settings": {
-            "title": "How can I make sure it will fit me properly?",
-            "content": "<p>Each product page includes a detailed size chart to help you find your perfect fit. We always recommend comparing the chart to a similar item you already own.</p><p>If you’re in between sizes, we generally recommend sizing up for the most comfortable fit. Still unsure? Our support team is happy to help you choose the right size!</p>"
           }
         },
         "item_B3Pgdw": {
@@ -588,6 +574,13 @@
           "settings": {
             "title": "I have an issue with my order, how can I contact you?",
             "content": "<p>Our customer support team is always happy to help. You can reach us through the Contact Page or by email at info@wilsons-newyork.com. We usually reply within <strong>24 hours</strong>.</p>"
+          }
+        },
+        "item_DejtGR": {
+          "type": "item",
+          "settings": {
+            "title": "How long does shipping take?",
+            "content": "<p>Orders are typically processed within <strong>1 to</strong> <strong>3 business days </strong>after being placed.</p>"
           }
         },
         "item_cktVHb": {
@@ -600,13 +593,12 @@
       },
       "block_order": [
         "item_XDfKQt",
-        "item_DejtGR",
-        "item_87zhVk",
-        "item_TBHqLt",
-        "item_rnViBT",
-        "item_7UVMKz",
         "item_ji9gab",
+        "item_rnViBT",
+        "item_TBHqLt",
+        "item_7UVMKz",
         "item_B3Pgdw",
+        "item_DejtGR",
         "item_cktVHb"
       ],
       "settings": {
