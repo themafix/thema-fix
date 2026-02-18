@@ -540,6 +540,20 @@
             "content": "<p>Yes only today we offer free U.S. shipping + Track & Trace, on all orders. No hidden fees, no surprises at checkout. You'll see the full breakdown before you pay.</p>"
           }
         },
+        "item_DejtGR": {
+          "type": "item",
+          "settings": {
+            "title": "How long does shipping take?",
+            "content": "<p>Orders are typically processed within <strong>1 to</strong> <strong>3 business days </strong>after being placed.</p>"
+          }
+        },
+        "item_87zhVk": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Write content to answer to common questions your customers may have about your products, shipping policies..</p>"
+          }
+        },
         "item_TBHqLt": {
           "type": "item",
           "settings": {
@@ -586,6 +600,8 @@
       },
       "block_order": [
         "item_XDfKQt",
+        "item_DejtGR",
+        "item_87zhVk",
         "item_TBHqLt",
         "item_rnViBT",
         "item_7UVMKz",
