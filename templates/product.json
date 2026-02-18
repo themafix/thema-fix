@@ -533,18 +533,11 @@
     "faq_TaRiGA": {
       "type": "faq",
       "blocks": {
-        "item_TBHqLt": {
+        "item_XDfKQt": {
           "type": "item",
           "settings": {
-            "title": "What payment methods do you accept?",
-            "content": "<p>You can check out securely using: <strong>Credit card, Visa, Mastercard, American Express, Apple Pay, Google Pay, Maestro, and Shop Pay.</strong></p>"
-          }
-        },
-        "item_QHjHed": {
-          "type": "item",
-          "settings": {
-            "title": "What payment methods do you accept?",
-            "content": ""
+            "title": "Do you offer free shipping?",
+            "content": "<p>Yes only today we offer free U.S. shipping + Track & Trace, on all orders. No hidden fees, no surprises at checkout. You'll see the full breakdown before you pay.</p>"
           }
         },
         "item_cktVHb": {
@@ -554,11 +547,11 @@
             "content": "<p>Yes, once you've placed your order, a confirmation will be sent to your email inbox. If you don’t see it, feel free to reach out to our customer service team, we’re happy to help you right away.<br/><br/>Email: info@wilsons-newyork.com</p>"
           }
         },
-        "item_XDfKQt": {
+        "item_7UVMKz": {
           "type": "item",
           "settings": {
-            "title": "Do you offer free shipping?",
-            "content": "<p>Yes only today we offer free U.S. shipping + Track & Trace, on all orders. No hidden fees, no surprises at checkout. You'll see the full breakdown before you pay.</p>"
+            "title": "Can I return the item(s) if I don’t like them?",
+            "content": "<p>Yes, you can return your order within 30 days of receiving it.</p>"
           }
         },
         "item_rnViBT": {
@@ -568,11 +561,11 @@
             "content": "<p>Once your order is confirmed, you will receive an email with your order number. To track your order, simply visit our <a href=\"https://wilsons-newyork.com/apps/parcelpanel\" title=\"https://wilsons-newyork.com/apps/parcelpanel\"><strong>Order Tracking</strong></a><strong> </strong>page and enter your order number or email address.</p>"
           }
         },
-        "item_7UVMKz": {
+        "item_TBHqLt": {
           "type": "item",
           "settings": {
-            "title": "Can I return the item(s) if I don’t like them?",
-            "content": "<p>Yes, you can return your order within 30 days of receiving it.</p>"
+            "title": "What payment methods do you accept?",
+            "content": "<p>You can check out securely using: <strong>Credit card, Visa, Mastercard, American Express, Apple Pay, Google Pay, Maestro, and Shop Pay.</strong></p>"
           }
         },
         "item_ji9gab": {
@@ -591,12 +584,11 @@
         }
       },
       "block_order": [
-        "item_TBHqLt",
-        "item_QHjHed",
-        "item_cktVHb",
         "item_XDfKQt",
-        "item_rnViBT",
+        "item_cktVHb",
         "item_7UVMKz",
+        "item_rnViBT",
+        "item_TBHqLt",
         "item_ji9gab",
         "item_B3Pgdw"
       ],
