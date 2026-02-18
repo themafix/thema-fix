@@ -551,7 +551,7 @@
           "type": "item",
           "settings": {
             "title": "How can I track my order?",
-            "content": "<p>You can track your order by entering your Order Number or Email/Phone Number on the \"Track Your Order\" page. Once you’ve entered your information and clicked \"Track,\" you will be able to see the status of your order.</p>"
+            "content": "<p>Once your order is confirmed, you will receive an email with your order number. To track your order, simply visit our <a href=\"https://wilsons-newyork.com/apps/parcelpanel\" title=\"https://wilsons-newyork.com/apps/parcelpanel\"><strong>Order Tracking</strong></a><strong> </strong>page and enter your order number or email address.</p>"
           }
         },
         "item_7UVMKz": {
@@ -565,7 +565,7 @@
           "type": "item",
           "settings": {
             "title": "How can I make sure it will fit me properly?",
-            "content": "<p>Our clothes fit exactly as indicated in the size chart. You will find the size chart with each product, so you can always choose the right size and be sure it fits perfectly.</p>"
+            "content": "<p>Each product page includes a detailed size chart to help you find your perfect fit. We always recommend comparing the chart to a similar item you already own.</p><p>If you’re in between sizes, we generally recommend sizing up for the most comfortable fit. Still unsure? Our support team is happy to help you choose the right size!</p>"
           }
         },
         "item_B3Pgdw": {
