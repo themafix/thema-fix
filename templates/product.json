@@ -536,7 +536,7 @@
         "item_TBHqLt": {
           "type": "item",
           "settings": {
-            "title": "Question",
+            "title": "What payment methods do you accept?",
             "content": "<p>You can check out securely using: <strong>Credit card, Visa, Mastercard, American Express, Apple Pay, Google Pay, Maestro, and Shop Pay.</strong></p>"
           }
         },
