@@ -533,6 +533,13 @@
     "faq_TaRiGA": {
       "type": "faq",
       "blocks": {
+        "item_cktVHb": {
+          "type": "item",
+          "settings": {
+            "title": "Will I receive a confirmation email after placing an order?",
+            "content": "<p>Yes, once you've placed your order, a confirmation will be sent to your email inbox. If you don’t see it, feel free to reach out to our customer service team, we’re happy to help you right away.<br/><br/>Email: info@wilsons-newyork.com</p>"
+          }
+        },
         "item_XDfKQt": {
           "type": "item",
           "settings": {
@@ -570,6 +577,7 @@
         }
       },
       "block_order": [
+        "item_cktVHb",
         "item_XDfKQt",
         "item_rnViBT",
         "item_7UVMKz",
