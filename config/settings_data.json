@@ -157,8 +157,9 @@
             "type": "item",
             "settings": {
               "icon": "picto-return",
-              "mobile_icon_width": 40,
-              "icon_width": 40,
+              "custom_icon": "shopify://shop_images/Scherm_afbeelding_2026-02-18_om_21.36.47.png",
+              "mobile_icon_width": 68,
+              "icon_width": 68,
               "icon_background_type": "none",
               "icon_background": "",
               "icon_color": "",
@@ -170,8 +171,9 @@
             "type": "item",
             "settings": {
               "icon": "picto-lock",
+              "custom_icon": "shopify://shop_images/Scherm_afbeelding_2026-02-18_om_21.34.34.png",
               "mobile_icon_width": 40,
-              "icon_width": 40,
+              "icon_width": 68,
               "icon_background_type": "none",
               "icon_background": "",
               "icon_color": "",
