@@ -543,8 +543,8 @@
         "item_rnViBT": {
           "type": "item",
           "settings": {
-            "title": "How do I track my order?",
-            "content": "<p>Once your order is confirmed, you will receive an email with your order number. To track your order, simply visit our <strong>ORDER TRACKING</strong> page and enter your order number or email address.</p>"
+            "title": "How can I track my order?",
+            "content": "<p>You can track your order by entering your Order Number or Email/Phone Number on the \"Track Your Order\" page. Once you’ve entered your information and clicked \"Track,\" you will be able to see the status of your order.</p>"
           }
         },
         "item_7UVMKz": {
