@@ -19,7 +19,8 @@
           "winter-dresses",
           "footwear",
           "pants",
-          "sets"
+          "sets",
+          "blouses"
         ],
         "collections_per_row": 3,
         "text_color": "#ffffff",
