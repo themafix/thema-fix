@@ -533,6 +533,20 @@
     "faq_TaRiGA": {
       "type": "faq",
       "blocks": {
+        "item_TBHqLt": {
+          "type": "item",
+          "settings": {
+            "title": "Question",
+            "content": "<p>You can check out securely using: <strong>Credit card, Visa, Mastercard, American Express, Apple Pay, Google Pay, Maestro, and Shop Pay.</strong></p>"
+          }
+        },
+        "item_QHjHed": {
+          "type": "item",
+          "settings": {
+            "title": "What payment methods do you accept?",
+            "content": ""
+          }
+        },
         "item_cktVHb": {
           "type": "item",
           "settings": {
@@ -577,6 +591,8 @@
         }
       },
       "block_order": [
+        "item_TBHqLt",
+        "item_QHjHed",
         "item_cktVHb",
         "item_XDfKQt",
         "item_rnViBT",
