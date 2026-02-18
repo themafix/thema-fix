@@ -328,7 +328,7 @@
           "type": "bullet",
           "settings": {
             "bullet_icon": "shopify://shop_images/heart_incon_2.png",
-            "bullet_text": "More than 100,000 satisfied customers",
+            "bullet_text": "More than 100.000 satisfied customers",
             "bullet_text_color": "#000000"
           }
         }
