@@ -206,11 +206,11 @@
       "settings": {
         "collection": "luxe-sweaters",
         "products": [
+          "pamela",
           "margaret-soft-knit-sweater-with-collar",
           "elena-warm-knitted-ladies-turtleneck",
           "donna-elegant-turtleneck-sweater",
-          "marie-cozy-knit-hoodie",
-          "pamela"
+          "marie-cozy-knit-hoodie"
         ],
         "full_width": false,
         "stack_products": false,
