@@ -155,28 +155,13 @@
             "overlay_color": "#000000",
             "overlay_opacity": 30
           }
-        },
-        "collection_DpzieB": {
-          "type": "collection",
-          "settings": {
-            "collection": "blouses",
-            "subheading": "Blouses",
-            "title": "",
-            "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
         }
       },
       "block_order": [
         "collection_7N9LJj",
         "collection_PV4war",
         "collection_VthjXi",
-        "collection_iCkdx3",
-        "collection_DpzieB"
+        "collection_iCkdx3"
       ],
       "settings": {
         "full_width": true,
