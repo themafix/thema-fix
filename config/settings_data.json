@@ -235,13 +235,21 @@
               "menu": "policys",
               "show_menu_title": true
             }
+          },
+          "text_8UJBbj": {
+            "type": "text",
+            "settings": {
+              "title": "About our store",
+              "content": "<p>MLH Sales LLC<br/>Number 8, The Green, Suite A<br/>Dover, Delaware 19901<br/>United States</p>"
+            }
           }
         },
         "block_order": [
           "text_U7XWWJ",
           "text_ELTeBR",
           "newsletter",
-          "links_zwLmqU"
+          "links_zwLmqU",
+          "text_8UJBbj"
         ],
         "settings": {
           "show_social_media": true,
