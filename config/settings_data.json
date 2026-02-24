@@ -42,7 +42,7 @@
     "show_product_rating": false,
     "discount_mode": "saving",
     "product_color_display": "hide",
-    "product_image_aspect_ratio": "natural",
+    "product_image_aspect_ratio": "square_crop",
     "product_info_alignment": "start",
     "checkout_accent_color": "#f0c417",
     "checkout_button_color": "#1a1a1a",
