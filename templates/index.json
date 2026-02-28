@@ -29,6 +29,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/foto_pakket_inpakken.png",
+            "mobile_image": "shopify://shop_images/foto_pakket_inpakken.png",
             "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
@@ -103,7 +104,6 @@
           "type": "collection",
           "settings": {
             "collection": "luxe-sweaters",
-            "image": "shopify://shop_images/Scherm_afbeelding_2026-01-25_om_16.09.47.png",
             "subheading": "",
             "title": "",
             "url": "shopify://collections/luxe-sweaters",
@@ -207,8 +207,6 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/haal-op-de-achtergrond-het-logo-weg-en-z_hG566IZmQO20qFaM-zfB-w_iL_eXY93T5uc_Xm7EeutNg.jpg",
-        "mobile_image": "shopify://shop_images/haal-op-de-achtergrond-het-logo-weg-en-z_hG566IZmQO20qFaM-zfB-w_iL_eXY93T5uc_Xm7EeutNg.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
