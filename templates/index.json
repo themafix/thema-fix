@@ -207,6 +207,8 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
+        "image": "shopify://shop_images/haal-op-de-achtergrond-het-logo-weg-en-z_hG566IZmQO20qFaM-zfB-w_iL_eXY93T5uc_Xm7EeutNg.jpg",
+        "mobile_image": "shopify://shop_images/haal-op-de-achtergrond-het-logo-weg-en-z_hG566IZmQO20qFaM-zfB-w_iL_eXY93T5uc_Xm7EeutNg_66ec045a-ea7c-4bb3-be5b-f3440431b251.jpg",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
