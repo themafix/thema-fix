@@ -1,0 +1,284 @@
+{%- assign ns = 's-nav-tabs-1' -%}
+{%- assign sid = section.id -%}
+
+
+<section id="{{ ns }}-{{ sid }}" class="{{ ns }}" role="navigation" aria-label="Category tabs">
+  <style>
+    #{{ ns }}-{{ sid }} {
+      --max-w: {{ section.settings.max_width }}px;
+      --top-m: {{ section.settings.section_top_space }}px;
+      --bottom-m: {{ section.settings.section_bottom_space }}px;
+      --top-m-mob: {{ section.settings.section_top_space_mob }}px;
+      --bottom-m-mob: {{ section.settings.section_bottom_space_mob }}px;
+      --bg: {{ section.settings.section_bg }};
+      --txt: {{ section.settings.text_color }};      
+      --active: {{ section.settings.active_text_color }};
+      --fz: {{ section.settings.font_size }}px;
+      --fz-m: {{ section.settings.font_size_mobile }}px;
+      --gap: {{ section.settings.item_gap }}px;
+      --gap-mob: {{ section.settings.item_gap_mobile }}px;
+      --pad-x: {{ section.settings.padding_x }}px;
+      --pad-x-mob: {{ section.settings.padding_x_mob }}px;
+      --pad-y: {{ section.settings.padding_y }}px;
+      --pad-y-mob: {{ section.settings.padding_y_mobile }}px;
+      --ls: {{ section.settings.letter_spacing }}px;
+      --underline-h: {{ section.settings.underline_thickness }}px;
+      --underline-color: {{ section.settings.underline_color }};
+      --hover-underline-color: {{ section.settings.underline_color_hover }};
+      --hover-underline-color-opacity: {{ section.settings.hover_color_opacity | divided_by: 100.0 }};
+      --underline-radius: {{ section.settings.underline_radius }}px;
+      --text-gap: {{ section.settings.text_gap }}px;
+      --align: {{ section.settings.align }};
+      --bar-border-thick: {{ section.settings.bar_border_thickness }}px;
+      --bar-border-color: {{ section.settings.bar_border_color }};
+    }
+
+
+    #{{ ns }}-{{ sid }} .{{ ns }}__bar {
+      background: var(--bg);
+      border-bottom: var(--bar-border-thick) solid var(--bar-border-color);
+      font-family: inherit;
+      margin-top: var(--top-m);
+      margin-bottom: var(--bottom-m);
+    }
+
+
+    #{{ ns }}-{{ sid }} .{{ ns }}__inner {
+      {% if section.settings.sec_full_width  %}
+        max-width: 100%;
+      {% else %}
+      max-width: var(--max-w);
+      {% endif %}
+      margin: 0 auto;
+      padding: 0 var(--pad-x);
+    }
+
+
+    #{{ ns }}-{{ sid }} .{{ ns }}__list {
+      display: flex;
+      gap: var(--gap);
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      {% if section.settings.show_scroll_bar == false %}
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      {% endif %}
+      justify-content:
+        {% if section.settings.align == 'left' %}flex-start
+        {% elsif section.settings.align == 'center' %}center
+        {% elsif section.settings.align == 'safe_center' %}safe center
+        {% else %}flex-end{% endif %};
+        margin-top:0;
+        margin-bottom:0;
+        padding-left:0;
+    }
+    {% if section.settings.show_scroll_bar == false %}
+    #{{ ns }}-{{ sid }} .{{ ns }}__list::-webkit-scrollbar { display: none; }
+    {% endif %}
+
+
+    /* Center everything vertically within equal top/bottom padding */
+    #{{ ns }}-{{ sid }} .{{ ns }}__item {
+      list-style: none;
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: var(--pad-y) 0;
+      position: relative;
+      margin-bottom:0;
+    }
+
+
+    #{{ ns }}-{{ sid }} .{{ ns }}__link {
+      display: inline-block;
+      font-size: var(--fz);
+      color: var(--txt);
+      font-family: inherit;
+      line-height: 1.1;
+      {% if section.settings.uppercase %}text-transform: uppercase;{% endif %}
+      letter-spacing: var(--ls);
+      {% comment %} font-weight: 400; {% endcomment %}
+       font-weight: {{ section.settings.font_weight_desktop}};
+      text-decoration: none;
+      padding: 0 2px;
+      transition: opacity 0.2s ease, color 0.2s ease, font-weight 0.2s ease;
+       margin-bottom: var(--text-gap); /* equal distance above underline */ 
+       opacity: {{ section.settings.text_color_opacity | divided_by: 100.0 }};
+    }
+
+
+    /* underline anchored at bottom edge */
+    #{{ ns }}-{{ sid }} .{{ ns }}__underline {
+      width: 100%;
+      height: 0;
+      background: var(--underline-color);
+      border-radius: var(--underline-radius);
+      transition: width 0.25s ease;
+      align-self: stretch;
+      position: absolute;
+      bottom:0;
+    }
+
+
+    /* hover + active */
+    #{{ ns }}-{{ sid }} .{{ ns }}__item:hover .{{ ns }}__link,
+    #{{ ns }}-{{ sid }} .{{ ns }}__item.is-active .{{ ns }}__link {
+      color: var(--active);
+       {% comment %} font-weight: 700; {% endcomment %}
+       opacity:1;
+    }
+    /* hover underline color */
+    #{{ ns }}-{{ sid }} .{{ ns }}__item:hover .{{ ns }}__underline{
+      background-color: var(--hover-underline-color);
+      opacity: var(--hover-underline-color-opacity);
+    }
+
+
+    #{{ ns }}-{{ sid }} .{{ ns }}__item:hover .{{ ns }}__underline,
+    #{{ ns }}-{{ sid }} .{{ ns }}__item.is-active .{{ ns }}__underline {      
+      height: var(--underline-h);
+    }
+
+
+    @media (max-width: 768px) {
+      #{{ ns }}-{{ sid }} .{{ ns }}__bar {
+      margin-top: var(--top-m-mob);
+      margin-bottom: var(--bottom-m-mob);
+    }
+      #{{ ns }}-{{ sid }} .{{ ns }}__inner {
+        padding-left: var(--pad-x-mob);
+        padding-right: var(--pad-x-mob);
+      }
+      #{{ ns }}-{{ sid }} .{{ ns }}__link {
+        font-size: var(--fz-m);
+        font-weight: {{ section.settings.font_weight_mobile}};
+      }
+      #{{ ns }}-{{ sid }} .{{ ns }}__list {
+        {% comment %} gap: calc(var(--gap) - 4px); {% endcomment %}
+         gap: var(--gap-mob);
+      }
+        #{{ ns }}-{{ sid }} .{{ ns }}__item {        
+        padding: var(--pad-y-mob) 0;
+        }
+        #{{ ns }}-{{ sid }} .{{ ns }}__list {
+            justify-content: flex-start;
+        }
+         #{{ ns }}-{{ sid }} .{{ ns }}__list {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            }
+            #{{ ns }}-{{ sid }} .{{ ns }}__list::-webkit-scrollbar { display: none; }
+            }
+    }
+  </style>
+
+
+  <div class="{{ ns }}__bar">
+    <div class="{{ ns }}__inner">
+      <ul class="{{ ns }}__list" role="tablist">
+        {%- for block in section.blocks -%}
+          <li class="{{ ns }}__item {% if block.settings.is_active %}is-active{% endif %}" {{ block.shopify_attributes }}>
+            {%- if block.settings.link != blank -%}
+              <a class="{{ ns }}__link" href="{{ block.settings.link }}" role="tab" aria-selected="{{ block.settings.is_active }}">
+                {{ block.settings.label | escape }}
+              </a>
+            {%- else -%}
+              <span class="{{ ns }}__link" role="tab" aria-selected="{{ block.settings.is_active }}">
+                {{ block.settings.label | escape }}
+              </span>
+            {%- endif -%}
+            <span class="{{ ns }}__underline"></span>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+{
+  "name": "s-nav-tabs-1",
+  "settings": [
+    {
+      "type": "header",
+      "content": "❓ Need help?",
+      "info": "Simply click here to get support: [💬 Click for Support](https://selluxewebsites.com/support)"
+    },
+    {
+      "type": "header",
+      "content": "📲 Follow our socials",
+      "info": "[▶️ YouTube](https://www.youtube.com/@SelluxeTutorials)  \n[📸 Instagram](https://www.instagram.com/selluxewebsites/)"
+    },
+    {
+      "type": "header",
+      "content": "⚙️ Customize Settings",
+      "info": "Adjust visuals, colors, spacing, and other options below."
+    },
+
+    { "type": "checkbox", "id": "sec_full_width", "label": "Full width", "default": false },
+    { "type": "range", "id": "max_width", "label": "Section max width (px)", "min": 900, "max": 1600, "step": 10, "default": 1200 },
+    { "type": "color", "id": "section_bg", "label": "Background color", "default": "#EDEDED" },
+
+    { "type": "range", "id": "section_top_space", "label": "Whole section top space", "min": 0, "max": 100, "step": 1, "default": 0 },
+    { "type": "range", "id": "section_bottom_space", "label": "Whole section bottom space", "min": 0, "max": 100, "step": 1, "default": 0 },
+    { "type": "range", "id": "section_top_space_mob", "label": "Whole section top space (mobile)", "min": 0, "max": 100, "step": 1, "default": 0 },
+    { "type": "range", "id": "section_bottom_space_mob", "label": "Whole section top space (mobile)", "min": 0, "max": 100, "step": 1, "default": 0 },
+
+    { "type": "range", "id": "bar_border_thickness", "label": "Bottom border thickness (px)", "min": 0, "max": 3, "step": 1, "default": 0 },
+    { "type": "color", "id": "bar_border_color", "label": "Bottom border color", "default": "#CFCFCF" },
+
+
+    { "type": "color", "id": "text_color", "label": "Text color", "default": "#000" },
+    { "type": "range", "id": "text_color_opacity", "min": 0, "max": 100, "step": 10, "unit": "%", "label": "Text color opacity", "default": 60},
+
+    { "type": "color", "id": "active_text_color", "label": "Active text color", "default": "#000000" },
+
+
+    { "type": "range", "id": "font_size", "label": "Font size (desktop, px)", "min": 10, "max": 20, "step": 1, "default": 13 },
+    { "type": "range", "id": "font_size_mobile", "label": "Font size (mobile, px)", "min": 10, "max": 18, "step": 1, "default": 12 },
+
+    { "type": "select", "id": "font_weight_desktop", "label": "Font weight (desktop)", "default": "500", "options": [{ "value": "100", "label": "Thin (100)" }, { "value": "200", "label": "Extra Light (200)" }, { "value": "300", "label": "Light (300)" }, { "value": "400", "label": "Regular (400)" }, { "value": "500", "label": "Medium (500)" }, { "value": "600", "label": "Semi Bold (600)" }, { "value": "700", "label": "Bold (700)" }, { "value": "800", "label": "Extra Bold (800)" }, { "value": "900", "label": "Black (900)" }]},
+    { "type": "select", "id": "font_weight_mobile", "label": "Font weight (mobile)", "default": "500", "options": [{ "value": "100", "label": "Thin (100)" }, { "value": "200", "label": "Extra Light (200)" }, { "value": "300", "label": "Light (300)" }, { "value": "400", "label": "Regular (400)" }, { "value": "500", "label": "Medium (500)" }, { "value": "600", "label": "Semi Bold (600)" }, { "value": "700", "label": "Bold (700)" }, { "value": "800", "label": "Extra Bold (800)" }, { "value": "900", "label": "Black (900)" }]},
+
+    { "type": "checkbox", "id": "uppercase", "label": "Uppercase labels", "default": true },
+    { "type": "range", "id": "letter_spacing", "label": "Letter spacing (px)", "min": 0, "max": 3, "step": 1, "default": 0 },
+
+
+    { "type": "select", "id": "align", "label": "Horizontal alignment", "options": [{"value": "left","label": "Left"}, {"value": "center", "label": "Center"}, { "value": "right", "label": "Right" },{ "value": "safe_center", "label": "Safe center" }], "default": "safe_center" },
+
+    { "type": "range", "id": "item_gap", "label": "Space between items (px)", "min": 8, "max": 40, "step": 1, "default": 28 },
+    { "type": "range", "id": "item_gap_mobile", "label": "Space between items (mobile)", "min": 8, "max": 40, "step": 1, "default": 18 },
+    { "type": "range", "id": "padding_x", "label": "Horizontal padding (px)", "min": 0, "max": 40, "step": 1, "default": 16 },
+    { "type": "range", "id": "padding_x_mob", "label": "Horizontal padding (mobile)", "min": 0, "max": 40, "step": 1, "default": 16 },
+    { "type": "range", "id": "padding_y", "label": "Vertical padding (px)", "min": 0, "max": 40, "step": 1, "default": 14 },
+    { "type": "range", "id": "padding_y_mobile", "label": "Vertical padding (mobile)", "min": 0, "max": 40, "step": 1, "default": 12 },
+
+
+    { "type": "range", "id": "text_gap", "label": "Space between text and underline (px)", "min": 0, "max": 20, "step": 1, "default": 0 },
+    { "type": "color", "id": "underline_color", "label": "Underline color", "default": "#000000" },
+    { "type": "range", "id": "underline_thickness", "label": "Underline thickness (px)", "min": 1, "max": 6, "step": 1, "default": 2 },
+    { "type": "range", "id": "underline_radius", "label": "Underline radius (px)", "min": 0, "max": 8, "step": 1, "default": 2 },
+    { "type": "color", "id": "underline_color_hover", "label": "Underline hover color", "default": "#000000" },
+    { "type": "range", "id": "hover_color_opacity", "min": 0, "max": 100, "step": 10, "unit": "%", "label": "Underline hover color opacity", "default": 50},
+
+    { "type": "checkbox", "id": "show_scroll_bar", "label": "Show scrollbar (desktop)", "default": false, "info": "Enable scrolling if the menu is larger than the visible viewport." },
+  ],
+  "blocks": [
+    {
+      "type": "nav_item",
+      "name": "Menu item",
+      "settings": [
+        { "type": "text", "id": "label", "label": "Label", "default": "COLLECTION NAME" },
+        { "type": "url", "id": "link", "label": "Link", "default": "/" },
+        { "type": "checkbox", "id": "is_active", "label": "Mark as active", "default": false }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "s-collection-tabs-1", "category": "Navigation" }
+  ]
+}
+{% endschema %}
