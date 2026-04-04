@@ -25,51 +25,35 @@
     "s_collection_tabs_1_AJmpC9": {
       "type": "s-collection-tabs-1",
       "blocks": {
-        "nav_item_bXTU77": {
+        "nav_item_nkcKYn": {
           "type": "nav_item",
           "settings": {
-            "label": "mary janes",
-            "link": "shopify://collections/mary-janes-loafers",
+            "label": "tops",
+            "link": "/",
             "is_active": false
           }
         },
-        "nav_item_jkmeqr": {
+        "nav_item_UnF4UL": {
           "type": "nav_item",
           "settings": {
-            "label": "heels",
-            "link": "shopify://collections/heels",
+            "label": "bags",
+            "link": "shopify://collections/bags",
             "is_active": false
           }
         },
-        "nav_item_WkijNr": {
+        "nav_item_bJFUHj": {
           "type": "nav_item",
           "settings": {
-            "label": "sandals",
-            "link": "shopify://collections/sandals",
+            "label": "blouses",
+            "link": "shopify://collections/blouses",
             "is_active": false
           }
         },
-        "nav_item_Tr9qik": {
+        "nav_item_NTEwb7": {
           "type": "nav_item",
           "settings": {
-            "label": "loafers",
-            "link": "shopify://collections/loafers",
-            "is_active": false
-          }
-        },
-        "nav_item_njEHGJ": {
-          "type": "nav_item",
-          "settings": {
-            "label": "pants",
-            "link": "shopify://collections/pants",
-            "is_active": false
-          }
-        },
-        "nav_item_3eXpfW": {
-          "type": "nav_item",
-          "settings": {
-            "label": "footwear",
-            "link": "shopify://collections/footwear",
+            "label": "shirts",
+            "link": "shopify://collections/polo-shirts",
             "is_active": false
           }
         },
@@ -89,52 +73,68 @@
             "is_active": false
           }
         },
-        "nav_item_NTEwb7": {
+        "nav_item_3eXpfW": {
           "type": "nav_item",
           "settings": {
-            "label": "shirts",
-            "link": "shopify://collections/polo-shirts",
+            "label": "footwear",
+            "link": "shopify://collections/footwear",
             "is_active": false
           }
         },
-        "nav_item_bJFUHj": {
+        "nav_item_njEHGJ": {
           "type": "nav_item",
           "settings": {
-            "label": "blouses",
-            "link": "shopify://collections/blouses",
+            "label": "pants",
+            "link": "shopify://collections/pants",
             "is_active": false
           }
         },
-        "nav_item_UnF4UL": {
+        "nav_item_Tr9qik": {
           "type": "nav_item",
           "settings": {
-            "label": "bags",
-            "link": "shopify://collections/bags",
+            "label": "loafers",
+            "link": "shopify://collections/loafers",
             "is_active": false
           }
         },
-        "nav_item_nkcKYn": {
+        "nav_item_jkmeqr": {
           "type": "nav_item",
           "settings": {
-            "label": "tops",
-            "link": "/",
+            "label": "heels",
+            "link": "shopify://collections/heels",
+            "is_active": false
+          }
+        },
+        "nav_item_WkijNr": {
+          "type": "nav_item",
+          "settings": {
+            "label": "sandals",
+            "link": "shopify://collections/sandals",
+            "is_active": false
+          }
+        },
+        "nav_item_bXTU77": {
+          "type": "nav_item",
+          "settings": {
+            "label": "mary janes",
+            "link": "shopify://collections/mary-janes-loafers",
             "is_active": false
           }
         }
       },
       "block_order": [
-        "nav_item_bXTU77",
-        "nav_item_jkmeqr",
-        "nav_item_WkijNr",
-        "nav_item_Tr9qik",
-        "nav_item_njEHGJ",
-        "nav_item_3eXpfW",
+        "nav_item_nkcKYn",
+        "nav_item_UnF4UL",
+        "nav_item_bJFUHj",
+        "nav_item_NTEwb7",
         "nav_item_3zn8qa",
         "nav_item_jgYMXp",
-        "nav_item_NTEwb7",
-        "nav_item_bJFUHj",
-        "nav_item_UnF4UL",
-        "nav_item_nkcKYn"
+        "nav_item_3eXpfW",
+        "nav_item_njEHGJ",
+        "nav_item_Tr9qik",
+        "nav_item_jkmeqr",
+        "nav_item_WkijNr",
+        "nav_item_bXTU77"
       ],
       "name": "s-collection-tabs-1",
       "settings": {
