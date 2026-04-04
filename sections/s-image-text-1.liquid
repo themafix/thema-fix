@@ -1,0 +1,1480 @@
+<!-- sections/s-image-text-1.liquid -->
+{% capture image_text_markup %}
+<style>
+  .s-image-text-1-{{ section.id }} {
+    padding-top:{{  section.settings.padding-block-start }}px;
+    padding-bottom:{{  section.settings.padding-block-end }}px;
+    padding-left:{{ section.settings.padding-left-start }}px;
+    padding-right:{{ section.settings.padding-right-start }}px;
+    margin-top:{{  section.settings.margin-block-start }}px;
+    margin-bottom:{{  section.settings.margin-block-end }}px;
+    background:{{ section.settings.sec_back }};
+  }
+
+
+  .s-image-text-1-{{ section.id }} .selluxe-image-text-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: {{ section.settings.content_gap }}px;
+    align-items:{{section.settings.content_position }};
+    background:{{ section.settings.cnt_back }};
+    border-radius:{{ section.settings.cnt_brd }}px;
+    padding:{{ section.settings.cnt_topbottom }}px {{ section.settings.cnt_leftright }}px;
+    {% if section.settings.info_customwidth == 'full' %}
+        max-width: 100%;
+    {% else %}
+        max-width: {{ section.settings.info_custwidth}}px;
+        margin-left: auto;
+        margin-right: auto;
+    {% endif %}
+
+
+    {% if section.settings.enable_border %}
+      border: {{ section.settings.border_thickness }}px solid {{ section.settings.border_color }};
+    {% endif %}
+  }
+
+
+  /* Desktop media position */
+  .s-image-text-1-{{ section.id }}.media-left .selluxe-media { order: 1; }
+  .s-image-text-1-{{ section.id }}.media-left .selluxe-content { order: 2; }
+  .s-image-text-1-{{ section.id }}.media-right .selluxe-media { order: 2; }
+  .s-image-text-1-{{ section.id }}.media-right .selluxe-content { order: 1; }
+
+
+  .s-image-text-1-{{ section.id }} .selluxe-media {
+    overflow: hidden;
+    border-radius: {{ section.settings.border_radius }}px;
+    {% if section.settings.image_video_height == 'custom'%}
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    {% endif %}
+  }
+ 
+ 
+    .s-image-text-1-{{ section.id }} .selluxe-media .video-wrapper{
+        height:auto;
+        {% if section.settings.image_video_height == 'custom'%}
+            aspect-ratio:1/{{section.settings.imvidhight}};
+            width: 100%;
+        {% endif %}
+       
+       
+    }
+    .s-image-text-1-{{ section.id }} .selluxe-media svg,
+    .s-image-text-1-{{ section.id }} .selluxe-media img {
+        {% if section.settings.image_video_height == 'custom'%}
+            aspect-ratio:1/{{section.settings.imvidhight}};
+            width: 100%;
+        {% endif %}
+    }
+ .s-image-text-1-{{ section.id }} .selluxe-media svg,
+  .s-image-text-1-{{ section.id }} .selluxe-media img,
+  .s-image-text-1-{{ section.id }} .selluxe-media video,
+  .s-image-text-1-{{ section.id }} .selluxe-media iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: {{ section.settings.border_radius }}px;
+  }
+
+
+  .s-image-text-1-{{ section.id }} .selluxe-content {
+    display: flex;
+    flex-direction: column;
+    padding: {{section.settings.textcontentpaddingtb }}px {{section.settings.textcontentpaddinglr }}px;
+    border-radius: {{ section.settings.border_radius }}px;
+    align-items:{{ section.settings.texthorizontal }};
+    {% if  section.settings.texthorizontal  == 'center'%}
+        text-align:center;
+    {% elsif  section.settings.texthorizontal  == 'end'%}
+         text-align:right;
+    {% else %}
+        text-align:left;
+    {% endif %}
+    justify-content:{{ section.settings.textvertical }};
+  }
+
+
+  /* Heading */
+  .s-image-text-1-{{ section.id }} .selluxe-content h2 {
+    margin:0px;
+    text-transform:{{ section.settings.mainheadtransform }};
+    font-size: {{ section.settings.mainheadfontsize }}px;
+    line-height: {{ section.settings.mainheadlineheight }}px;
+    letter-spacing:{{ section.settings.mainhead_ltrspc }}px;
+    font-weight:{{ section.settings.mainheadfontweight }};
+    margin-bottom:{{ section.settings.mainheadspacebottom }}px;
+  }
+
+
+  /* Gradient part inside heading */
+  .s-image-text-1-{{ section.id }} .gradient-text {
+    background: linear-gradient(90deg, {{ section.settings.gradient_color_1 }}, {{ section.settings.gradient_color_2 }});
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+
+
+  /* Body text */
+  .s-image-text-1-{{ section.id }} .body-text p {
+    margin:0px;
+    }
+  .s-image-text-1-{{ section.id }} .body-text {
+    margin:0px;
+    text-transform:{{ section.settings.bodytexttransform }};
+    font-size: {{ section.settings.bodytextfontsize }}px;
+    line-height: {{ section.settings.bodytextlineheight }}px;
+    letter-spacing:{{ section.settings.bodytext_ltrspc }}px;
+    font-weight:{{ section.settings.bodytextfontweight }};
+    margin-bottom:{{ section.settings.bodytextspacebottom }}px;
+  }
+
+
+  /* USP list */
+  .s-image-text-1-{{ section.id }} .usp-list {
+    display: flex;
+    flex-direction: column;
+    gap: {{ section.settings.gapbtwtwousp }}px;
+  }
+
+
+  .s-image-text-1-{{ section.id }} .usp-item {
+   
+    display: flex;
+    align-items: center;
+    gap:{{section.settings.usptextgapbottom }}px;
+    text-transform:{{ section.settings.usptexttransform }};
+    font-size: {{ section.settings.usptextfontsize }}px;
+    line-height: {{ section.settings.usptextlineheight }}px;
+    letter-spacing:{{ section.settings.usptext_ltrspc }}px;
+    font-weight:{{ section.settings.usptextfontweight }};
+  }
+
+
+  /* USP icon style */
+  .s-image-text-1-{{ section.id }} .usp-icon {
+    width: {{section.settings.svg_size}}px;
+    height: {{section.settings.svg_size}}px;
+    border-radius: {{section.settings.svg_bordrradius}}px;
+    background: {{section.settings.svg_back}};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+
+  .s-image-text-1-{{ section.id }} .usp-icon svg {
+    width: 80%;
+    height: 80%;
+    fill: {{section.settings.svg_color}};
+    padding: 3px;
+  }
+
+
+  @media(max-width: 768px) {
+    .s-image-text-1-{{ section.id }} {
+      padding-top:{{  section.settings.mob_padding-block-start }}px;
+        padding-bottom:{{  section.settings.mob_padding-block-end }}px;
+        margin-top:{{  section.settings.mob_margin-block-start }}px;
+        margin-bottom:{{  section.settings.mob_margin-block-end }}px;
+        padding-left:{{ section.settings.mob_padding-left-start }}px;
+        padding-right:{{ section.settings.mob_padding-right-start }}px;
+    }
+
+
+    /* Force flex column on mobile */
+    .s-image-text-1-{{ section.id }} .selluxe-image-text-wrapper {
+      display: flex !important;
+      flex-direction: column !important;
+     
+      gap: {{section.settings.content_gap_m }}px;
+      padding:{{ section.settings.cnt_topbottom_m }}px {{ section.settings.cnt_leftright_m }}px;
+    }
+
+
+    /* Always media first */
+    .s-image-text-1-{{ section.id }} .selluxe-media { order: 1 !important; }
+    .s-image-text-1-{{ section.id }} .selluxe-content { order: 2 !important; }
+
+
+    .s-image-text-1-{{ section.id }} .selluxe-content {
+        align-items:{{ section.settings.texthorizontal_m }};
+        {% if  section.settings.texthorizontal_m  == 'center'%}
+            text-align:center;
+        {% elsif  section.settings.texthorizontal_m  == 'end'%}
+            text-align:right;
+        {% else %}
+            text-align:left;
+        {% endif %}
+      padding: {{section.settings.textcontentpaddingtb_m }}px {{section.settings.textcontentpaddinglr_m }}px;
+    }
+
+
+    .s-image-text-1-{{ section.id }} .selluxe-content h2 {
+        font-size: {{ section.settings.mainheadfontsize_m }}px;
+        line-height: {{ section.settings.mainheadlineheight_m }}px;
+        letter-spacing:{{ section.settings.mainhead_ltrspc_m }}px;
+        font-weight:{{ section.settings.mainheadfontweight_m }};
+        margin-bottom:{{ section.settings.mainheadspacebottom_m }}px;
+    }
+    .s-image-text-1-{{ section.id }} .body-text {
+      font-size: {{ section.settings.bodytextfontsize_m }}px;
+        line-height: {{ section.settings.bodytextlineheight_m }}px;
+        letter-spacing:{{ section.settings.bodytext_ltrspc_m }}px;
+        font-weight:{{ section.settings.bodytextfontweight_m }};
+        margin-bottom:{{ section.settings.bodytextspacebottom_m }}px;
+    }
+    .s-image-text-1-{{ section.id }} .usp-item {
+        font-size: {{ section.settings.usptextfontsize_m }}px;
+        line-height: {{ section.settings.usptextlineheight_m }}px;
+        letter-spacing:{{ section.settings.usptext_ltrspc_m }}px;
+        font-weight:{{ section.settings.usptextfontweight_m }};
+        gap:{{section.settings.usptextgapbottom_m }}px;
+    }
+    .s-image-text-1-{{ section.id }} .usp-icon {
+        width: {{section.settings.svg_size_m}}px;
+        height: {{section.settings.svg_size_m}}px;
+    }
+    .s-image-text-1-{{ section.id }} .usp-list {
+        gap: {{ section.settings.gapbtwtwousp_m }}px;
+    }
+
+
+
+
+    .s-image-text-1-{{ section.id }} .selluxe-media {
+        overflow: hidden;
+        {% if section.settings.image_video_height_m == 'custom'%}
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        {% endif %}
+    }
+    .s-image-text-1-{{ section.id }} .selluxe-media .video-wrapper{
+        height:auto;
+        {% if section.settings.image_video_height_m == 'custom'%}
+            aspect-ratio:1/{{section.settings.imvidhight_m}};
+            width: 100%;
+        {% endif %}
+       
+       
+    }
+    .s-image-text-1-{{ section.id }} .selluxe-media svg,
+    .s-image-text-1-{{ section.id }} .selluxe-media img {
+        {% if section.settings.image_video_height_m == 'custom'%}
+            aspect-ratio:1/{{section.settings.imvidhight_m}};
+            width: 100%;
+        {% endif %}
+    }
+  }
+</style>
+
+
+<div class="s-image-text-1-{{ section.id }} media-{{ section.settings.media_position }}">
+  <div class="selluxe-image-text-wrapper">
+    <div class="selluxe-media">
+      {% if section.settings.media_type == 'image' %}
+
+
+       
+            {% if section.settings.image != blank %}
+                <img src="{{ section.settings.image | image_url: width: 1200 }}" alt="{{ section.settings.image_alt | escape }}">
+            {%  else %}
+
+
+                    <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" fill="white"/>
+                    <path d="M21 16V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V18M21 16V4C21 3.44772 20.5523 3 20 3H4C3.44772 3 3 3.44772 3 4V18M21 16L15.4829 12.3219C15.1843 12.1228 14.8019 12.099 14.4809 12.2595L3 18" stroke="#000000" stroke-linejoin="round"/>
+                    <circle cx="8" cy="9" r="2" stroke="#000000" stroke-linejoin="round"/>
+                </svg>
+            {% endif %}
+      {% elsif section.settings.media_type == 'video' %}
+            {% if section.settings.video_url != blank %}
+                <div class="video-wrapper">
+                <iframe src="{{ section.settings.video_url }}" frameborder="0" allowfullscreen></iframe>
+                </div>
+            {%  else %}
+                 <div class="video-wrapper">
+                    <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" fill="white"/>
+                    <path d="M21 16V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V18M21 16V4C21 3.44772 20.5523 3 20 3H4C3.44772 3 3 3.44772 3 4V18M21 16L15.4829 12.3219C15.1843 12.1228 14.8019 12.099 14.4809 12.2595L3 18" stroke="#000000" stroke-linejoin="round"/>
+                    <circle cx="8" cy="9" r="2" stroke="#000000" stroke-linejoin="round"/>
+                </svg>
+                </div>
+            {% endif %}
+      {% endif %}
+    </div>
+    <div class="selluxe-content">
+      {% if section.settings.heading != blank %}
+        <h2>
+          {% assign parts = section.settings.heading | split: '|' %}
+          {% for part in parts %}
+            {% assign mod = forloop.index | modulo: 2 %}
+            {% if mod == 0 %}
+              <span class="gradient-text">{{ part }}</span>
+            {% else %}
+              {{ part }}
+            {% endif %}
+          {% endfor %}
+        </h2>
+      {% endif %}
+
+
+      {% if section.settings.text != blank %}
+        <div class="body-text">{{ section.settings.text }}</div>
+      {% endif %}
+
+
+      <div class="usp-list">
+        {% for block in section.blocks %}
+          <div class="usp-item">
+            {% if section.settings.show_uspicon == true %}
+                {% if block.settings.iconimage != blank %}
+                    <img class="usp-icon" style="background:transparent;" src="{{ block.settings.iconimage | img_url:"master" }}">
+                    {% else %}
+                    <span class="usp-icon">
+                        <svg viewBox="0 0 24 24"><path d="M20.285 6.709a1 1 0 0 0-1.414-1.418l-9.192 9.185-4.242-4.242a1 1 0 1 0-1.414 1.415l5 5a1 1 0 0 0 1.414 0l10-9.94z"/></svg>
+                    </span>
+               
+                    {% endif %}
+        {% endif %}
+            <span>{{ block.settings.text }}</span>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endcapture %}
+
+
+{{ image_text_markup }}
+
+
+{% schema %}
+{
+    "name": "s-image-text-1",
+    "tag": "section",
+    "settings": [
+        {
+            "type": "header",
+            "content": "❓ Need help?",
+            "info": "Simply click here to get support: [💬 Click for Support](https://selluxewebsites.com/support)"
+        },
+        {
+            "type": "header",
+            "content": "📲 Follow our socials",
+            "info": "[▶️ YouTube](https://www.youtube.com/@SelluxeTutorials)  [📸 Instagram](https://www.instagram.com/selluxewebsites/)"
+        },
+        {
+            "type": "header",
+            "content": "⚙️ Customize Settings",
+            "info": "Adjust visuals, colors, spacing, and other options below."
+        },
+        {
+            "type": "header",
+            "content": "Layout"
+        },
+        {
+            "type": "select",
+            "id": "info_customwidth",
+            "label": "Section",
+            "options": [
+                {
+                    "value": "full",
+                    "label": "Full width"
+                },
+                {
+                    "value": "custom",
+                    "label": "Custom"
+                }
+            ],
+            "default": "custom"
+        },
+        {
+            "type": "number",
+            "id": "info_custwidth",
+            "label": "Width desktop",
+            "default": 1440,
+            "info": "eg: 1400",
+            "visible_if": "{{ section.settings.info_customwidth == 'custom'}}"
+        },
+        {
+            "type": "header",
+            "content": "Colors"
+        },
+        {
+            "type": "color",
+            "id": "sec_back",
+            "label": "Background color",
+            "default": "transparent"
+        },
+        {
+            "type": "color",
+            "id": "cnt_back",
+            "label": "Container color",
+            "default": "transparent"
+        },
+        {
+            "type": "color",
+            "id": "border_color",
+            "label": "Container Border color",
+            "default": "#cccccc"
+        },
+        {
+            "type": "color",
+            "id": "gradient_color_1",
+            "label": "Gradient color 1",
+            "info": "Heading (wrap gradient part with |pipes|)",
+            "default": "#ff7e5f"
+        },
+        {
+            "type": "color",
+            "id": "gradient_color_2",
+            "label": "Gradient color 2",
+            "info": "Heading (wrap gradient part with |pipes|)",
+            "default": "#feb47b"
+        },
+        {
+            "type": "color",
+            "id": "svg_back",
+            "label": "Svg background color",
+            "default": "#3b82f6"
+        },
+        {
+            "type": "color",
+            "id": "svg_color",
+            "label": "Svg color",
+            "default": "#fff"
+        },
+
+
+        {
+            "type": "header",
+            "content": "Main heading desktop"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading (wrap gradient part with |pipes|)",
+            "default": "The perfect fit, |always|"
+        },
+        {
+        "type": "select",
+        "id": "mainheadtransform",
+        "label": "Text trasform",
+        "options": [
+             {
+            "value": "uppercase",
+            "label": "Uppercase"
+            },
+            {
+            "value": "capitalize",
+            "label": "Capitalize"
+            },
+            {
+            "value": "lowercase",
+            "label": "Lowercase"
+            },
+            {
+            "value": "none",
+            "label": "None"
+            }
+        ],
+        "default": "none"
+        },
+        {
+            "type": "range",
+            "label": "Letter spacing",
+            "id": "mainhead_ltrspc",
+            "unit": "px",
+            "min": 0,
+            "max": 3,
+            "step": 0.1,
+            "default": 0.1
+        },
+        {
+            "type": "range",
+            "id": "mainheadfontsize",
+            "label": " Font size",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 24
+        },
+        {
+            "type": "range",
+            "id": "mainheadlineheight",
+            "label": " Line height",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 30
+        },
+        {
+            "type": "range",
+            "label": "Font weight",
+            "id": "mainheadfontweight",
+            "unit": "px",
+            "min": 100,
+            "max": 1000,
+            "step": 100,
+            "default": 600
+        },
+        {
+            "type": "range",
+            "label": "Space bottom",
+            "id": "mainheadspacebottom",
+            "unit": "px",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 15
+        },
+        {
+            "type": "header",
+            "content": "Main heading mobile"
+        },
+        {
+            "type": "range",
+            "id": "mainheadfontsize_m",
+            "label": "Font size",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 20
+        },
+        {
+            "type": "range",
+            "id": "mainheadlineheight_m",
+            "label": "Line height",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 30
+        },
+        {
+            "type": "range",
+            "label": "Letter spacing",
+            "id": "mainhead_ltrspc_m",
+            "unit": "px",
+            "min": 0,
+            "max": 3,
+            "step": 0.1,
+            "default": 0.1
+        },
+        {
+            "type": "range",
+            "label": "Font weight",
+            "id": "mainheadfontweight_m",
+            "unit": "px",
+            "min": 100,
+            "max": 1000,
+            "step": 100,
+            "default": 600
+        },
+        {
+            "type": "range",
+            "label": "Space bottom",
+            "id": "mainheadspacebottom_m",
+            "unit": "px",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 10
+        },
+        {
+            "type": "header",
+            "content": "Body text desktop"
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "Body text",
+            "default": "<p>Reduce puffiness and dark circles around the eyes. Made from silky-soft fabric, the mask minimizes friction and helps prevent wrinkles. Thanks to advanced silver ion technology, which eliminates 99.7% of bacteria, it protects your skin against impurities — so you wake up looking fresh and well-rested every morning.</p>"
+        },
+        {
+        "type": "select",
+        "id": "bodytexttransform",
+        "label": "Text trasform",
+        "options": [
+             {
+            "value": "uppercase",
+            "label": "Uppercase"
+            },
+            {
+            "value": "capitalize",
+            "label": "Capitalize"
+            },
+            {
+            "value": "lowercase",
+            "label": "Lowercase"
+            },
+            {
+            "value": "none",
+            "label": "None"
+            }
+        ],
+        "default": "none"
+        },
+        {
+            "type": "range",
+            "label": "Letter spacing",
+            "id": "bodytext_ltrspc",
+            "unit": "px",
+            "min": 0,
+            "max": 3,
+            "step": 0.1,
+            "default": 0.1
+        },
+        {
+            "type": "range",
+            "id": "bodytextfontsize",
+            "label": " Font size",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 18
+        },
+        {
+            "type": "range",
+            "id": "bodytextlineheight",
+            "label": " Line height",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 24
+        },
+        {
+            "type": "range",
+            "label": "Font weight",
+            "id": "bodytextfontweight",
+            "unit": "px",
+            "min": 100,
+            "max": 1000,
+            "step": 100,
+            "default": 300
+        },
+        {
+            "type": "range",
+            "label": "Space bottom",
+            "id": "bodytextspacebottom",
+            "unit": "px",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 15
+        },
+        {
+            "type": "header",
+            "content": "Body text mobile"
+        },
+        {
+            "type": "range",
+            "id": "bodytextfontsize_m",
+            "label": "Font size",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 16
+        },
+        {
+            "type": "range",
+            "id": "bodytextlineheight_m",
+            "label": "Line height",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 24
+        },
+        {
+            "type": "range",
+            "label": "Letter spacing",
+            "id": "bodytext_ltrspc_m",
+            "unit": "px",
+            "min": 0,
+            "max": 3,
+            "step": 0.1,
+            "default": 0.1
+        },
+        {
+            "type": "range",
+            "label": "Font weight",
+            "id": "bodytextfontweight_m",
+            "unit": "px",
+            "min": 100,
+            "max": 1000,
+            "step": 100,
+            "default": 300
+        },
+        {
+            "type": "range",
+            "label": "Space bottom",
+            "id": "bodytextspacebottom_m",
+            "unit": "px",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 15
+        },
+        {
+            "type": "header",
+            "content": "Usp settings desktop"
+        },
+        {
+            "type": "range",
+            "id": "gapbtwtwousp",
+            "label": "Gap between two usp's",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 10
+        },
+        {
+        "type": "select",
+        "id": "usptexttransform",
+        "label": "Text trasform",
+        "options": [
+             {
+            "value": "uppercase",
+            "label": "Uppercase"
+            },
+            {
+            "value": "capitalize",
+            "label": "Capitalize"
+            },
+            {
+            "value": "lowercase",
+            "label": "Lowercase"
+            },
+            {
+            "value": "none",
+            "label": "None"
+            }
+        ],
+        "default": "none"
+        },
+        {
+            "type": "range",
+            "label": "Letter spacing",
+            "id": "usptext_ltrspc",
+            "unit": "px",
+            "min": 0,
+            "max": 3,
+            "step": 0.1,
+            "default": 0.1
+        },
+        {
+            "type": "range",
+            "id": "usptextfontsize",
+            "label": " Font size",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 18
+        },
+        {
+            "type": "range",
+            "id": "usptextlineheight",
+            "label": " Line height",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 22
+        },
+        {
+            "type": "range",
+            "label": "Font weight",
+            "id": "usptextfontweight",
+            "unit": "px",
+            "min": 100,
+            "max": 1000,
+            "step": 100,
+            "default": 300
+        },
+        {
+            "type": "range",
+            "label": "Gap",
+            "id": "usptextgapbottom",
+            "unit": "px",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 10
+        },
+        {
+            "type": "header",
+            "content": "Usp settings mobile"
+        },
+        {
+            "type": "range",
+            "id": "gapbtwtwousp_m",
+            "label": "Gap between two usp's",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 10
+        },
+        {
+            "type": "range",
+            "id": "usptextfontsize_m",
+            "label": "Font size",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 16
+        },
+        {
+            "type": "range",
+            "id": "usptextlineheight_m",
+            "label": "Line height",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 22
+        },
+        {
+            "type": "range",
+            "label": "Letter spacing",
+            "id": "usptext_ltrspc_m",
+            "unit": "px",
+            "min": 0,
+            "max": 3,
+            "step": 0.1,
+            "default": 0.1
+        },
+        {
+            "type": "range",
+            "label": "Font weight",
+            "id": "usptextfontweight_m",
+            "unit": "px",
+            "min": 100,
+            "max": 1000,
+            "step": 100,
+            "default": 400
+        },
+         {
+            "type": "range",
+            "label": "Gap",
+            "id": "usptextgapbottom_m",
+            "unit": "px",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 10
+        },
+        {
+            "type": "header",
+            "content": "Usp svg desktop"
+        },
+        {
+        "type": "checkbox",
+        "id": "show_uspicon",
+        "label": "Show icon",
+        "default": true
+        },
+        {
+            "type": "range",
+            "label": "Svg size",
+            "id": "svg_size",
+            "unit": "px",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 20
+        },
+        {
+            "type": "number",
+            "id": "svg_bordrradius",
+            "label": "Svg border radius",
+            "default": 150
+        },
+       
+        {
+            "type": "header",
+            "content": "Usp svg mobile"
+        },
+        {
+            "type": "range",
+            "label": "Svg size",
+            "id": "svg_size_m",
+            "unit": "px",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 20
+        },
+
+
+        {
+            "type": "header",
+            "content": "media wrapper settings desktop"
+        },
+        {
+            "type": "select",
+            "id": "media_position",
+            "label": "Media position",
+            "options": [
+                {
+                    "value": "left",
+                    "label": "Left"
+                },
+                {
+                    "value": "right",
+                    "label": "Right"
+                }
+            ],
+            "default": "left"
+        },
+        {
+            "type": "select",
+            "id": "content_position",
+            "label": "Content alignment",
+            "options": [
+                {
+                    "value": "start",
+                    "label": "Start"
+                },
+                {
+                    "value": "center",
+                    "label": "Center"
+                },
+                {
+                    "value": "end",
+                    "label": "End"
+                },
+                {
+                    "value": "stretch",
+                    "label": "Stretch"
+                },
+            ],
+            "default": "stretch"
+        },
+        {
+            "type": "range",
+            "label": "Gap between media and content",
+            "id": "content_gap",
+            "unit": "px",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 20
+        },
+
+
+        {
+            "type": "header",
+            "content": "Media wrapper settings mobile"
+        },
+        {
+            "type": "range",
+            "label": "Gap between media and content",
+            "id": "content_gap_m",
+            "unit": "px",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 20
+        },
+
+
+        {
+            "type": "header",
+            "content": "Text container settings desktop"
+        },
+        {
+            "type": "select",
+            "id": "texthorizontal",
+            "label": "Text alignment horizontal",
+            "options": [
+                {
+                    "value": "start",
+                    "label": "Start"
+                },
+                {
+                    "value": "center",
+                    "label": "Center"
+                },
+                {
+                    "value": "end",
+                    "label": "End"
+                }
+            ],
+            "default": "start"
+        },
+        {
+            "type": "select",
+            "id": "textvertical",
+            "label": "Text alignment vretical",
+            "info": "When media wrapper content alignment set to  stretch",
+            "options": [
+                {
+                    "value": "start",
+                    "label": "Start"
+                },
+                {
+                    "value": "center",
+                    "label": "Center"
+                },
+                {
+                    "value": "end",
+                    "label": "End"
+                }
+            ],
+            "default": "center"
+        },
+       
+        {
+            "type": "range",
+            "label": "Text container padding top/bottom",
+            "id": "textcontentpaddingtb",
+            "unit": "px",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 40
+        },
+        {
+            "type": "range",
+            "label": "Wrapper text padding left/right",
+            "id": "textcontentpaddinglr",
+            "unit": "px",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 40
+        },
+        {
+            "type": "header",
+            "content": "Text container settings mobile"
+        },
+        {
+            "type": "select",
+            "id": "texthorizontal_m",
+            "label": "text alignment horizontal",
+            "options": [
+                {
+                    "value": "start",
+                    "label": "Start"
+                },
+                {
+                    "value": "center",
+                    "label": "Center"
+                },
+                {
+                    "value": "end",
+                    "label": "End"
+                }
+            ],
+            "default": "start"
+        },
+        {
+            "type": "range",
+            "label": "Text container padding top/bottom",
+            "id": "textcontentpaddingtb_m",
+            "unit": "px",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 30
+        },
+        {
+            "type": "range",
+            "label": "Wrapper text padding left/right",
+            "id": "textcontentpaddinglr_m",
+            "unit": "px",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 0
+        },
+        {
+            "type": "header",
+            "content": "Image/Video setttings desktop"
+        },
+        {
+            "type": "select",
+            "id": "image_video_height",
+            "label": "Image/Video wrapper size",
+            "options": [
+                {
+                    "value": "auto",
+                    "label": "Auto"
+                },
+                {
+                    "value": "custom",
+                    "label": "Custom"
+                }
+            ],
+            "default": "auto"
+        },
+        {
+            "type": "range",
+            "label": "Aspect ratio",
+            "id": "imvidhight",
+            "unit": "px",
+            "min": 0,
+            "max": 2,
+            "step": 0.1,
+            "default": 1,
+            "info": "When media wrapper content alignment not set to stretch",
+            "visible_if": "{{ section.settings.image_video_height == 'custom'}}"
+        },
+
+
+        {
+            "type": "select",
+            "id": "media_type",
+            "label": "Media type",
+            "options": [
+                {
+                    "value": "image",
+                    "label": "Image"
+                },
+                {
+                    "value": "video",
+                    "label": "Video"
+                }
+            ],
+            "default": "image"
+        },
+       
+       
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Upload image"
+        },
+        {
+            "type": "text",
+            "id": "image_alt",
+            "label": "Image alt text",
+            "default": "Product image"
+        },
+        {
+            "type": "url",
+            "id": "video_url",
+            "label": "Video URL (YouTube/Vimeo/MP4)"
+        },
+
+
+        {
+            "type": "range",
+            "id": "border_radius",
+            "label": "Border radius",
+            "min": 0,
+            "max": 40,
+            "step": 2,
+            "unit": "px",
+            "default": 12
+        },
+
+
+        {
+            "type": "header",
+            "content": "Image/Video setttings mobile"
+        },
+        {
+            "type": "select",
+            "id": "image_video_height_m",
+            "label": "Image/Video wrapper size",
+            "options": [
+                {
+                    "value": "auto",
+                    "label": "Auto"
+                },
+                {
+                    "value": "custom",
+                    "label": "Custom"
+                }
+            ],
+            "default": "auto"
+        },
+        {
+            "type": "range",
+            "label": "Aspect ratio",
+            "id": "imvidhight_m",
+            "unit": "px",
+            "min": 0,
+            "max": 2,
+            "step": 0.1,
+            "default": 1,
+            "visible_if": "{{ section.settings.image_video_height_m == 'custom'}}"
+        },
+
+
+
+
+        {
+            "type": "header",
+            "content": "Container settings desktop"
+        },
+        {
+            "type": "checkbox",
+            "id": "enable_border",
+            "label": "Enable border around container",
+            "default": false
+        },
+        {
+            "type": "range",
+            "id": "border_thickness",
+            "label": "Border thickness",
+            "min": 1,
+            "max": 10,
+            "step": 1,
+            "unit": "px",
+            "default": 2
+        },
+        {
+            "type": "range",
+            "label": "Border radius",
+            "id": "cnt_brd",
+            "unit": "px",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 0
+        },
+        {
+            "type": "range",
+            "label": "Padding top bottom",
+            "id": "cnt_topbottom",
+            "unit": "px",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 0
+        },
+        {
+            "type": "range",
+            "label": "Padding left right",
+            "id": "cnt_leftright",
+            "unit": "px",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 0
+        },
+        {
+            "type": "header",
+            "content": "Container settings mobile"
+        },
+        {
+            "type": "range",
+            "label": "Padding top bottom",
+            "id": "cnt_topbottom_m",
+            "unit": "px",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 0
+        },
+        {
+            "type": "range",
+            "label": "Padding left right",
+            "id": "cnt_leftright_m",
+            "unit": "px",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 0
+        },
+        {
+            "type": "header",
+            "content": "Section settings desktop"
+        },
+        {
+            "type": "range",
+            "id": "padding-block-start",
+            "label": "Padding top",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 50
+        },
+        {
+            "type": "range",
+            "id": "padding-block-end",
+            "label": "Padding bottom",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 50
+        },
+        {
+            "type": "range",
+            "id": "padding-left-start",
+            "label": "Padding left",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 15
+        },
+        {
+            "type": "range",
+            "id": "padding-right-start",
+            "label": "Padding right",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 15
+        },
+        {
+            "type": "range",
+            "id": "margin-block-start",
+            "label": "Margin top",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 0
+        },
+        {
+            "type": "range",
+            "id": "margin-block-end",
+            "label": "Margin bottom",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 0
+        },
+        {
+            "type": "header",
+            "content": "Section settings mobile"
+        },
+        {
+            "type": "range",
+            "id": "mob_padding-block-start",
+            "label": "Padding top",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 40
+        },
+        {
+            "type": "range",
+            "id": "mob_padding-block-end",
+            "label": "Padding bottom",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 40
+        },
+        {
+            "type": "range",
+            "id": "mob_padding-left-start",
+            "label": "Padding left",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 15
+        },
+        {
+            "type": "range",
+            "id": "mob_padding-right-start",
+            "label": "Padding right",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 15
+        },
+        {
+            "type": "range",
+            "id": "mob_margin-block-start",
+            "label": "Margin top",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 0
+        },
+        {
+            "type": "range",
+            "id": "mob_margin-block-end",
+            "label": "Margin bottom",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "default": 0
+        }
+    ],
+    "blocks": [
+        {
+            "type": "usp",
+            "name": "USP",
+            "settings": [
+               
+                {
+                    "type": "image_picker",
+                    "id": "iconimage",
+                    "label": "icon image"
+                },
+                {
+                    "type": "text",
+                    "id": "text",
+                    "label": "USP text",
+                    "default": "USP goes here"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "s-image-text-1",
+            "category": "Selluxe",
+            "blocks": [
+                {
+                    "type": "usp",
+                    "settings": {
+                        "text": "Promotes deep and uninterrupted sleep"
+                    }
+                },
+                {
+                    "type": "usp",
+                    "settings": {
+                        "text": "Helps you fall asleep faster and easier"
+                    }
+                },
+                {
+                    "type": "usp",
+                    "settings": {
+                        "text": "Encourages restorative REM sleep"
+                    }
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}
