@@ -117,10 +117,10 @@
         "collection_PV4war": {
           "type": "collection",
           "settings": {
-            "collection": "winter-dresses",
+            "collection": "dresses",
             "subheading": "",
             "title": "",
-            "url": "",
+            "url": "shopify://collections/dresses",
             "heading_tag": "h2",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
@@ -141,27 +141,12 @@
             "overlay_color": "#000000",
             "overlay_opacity": 30
           }
-        },
-        "collection_iCkdx3": {
-          "type": "collection",
-          "settings": {
-            "collection": "every-day-jackets-blazers",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
         }
       },
       "block_order": [
         "collection_7N9LJj",
         "collection_PV4war",
-        "collection_VthjXi",
-        "collection_iCkdx3"
+        "collection_VthjXi"
       ],
       "settings": {
         "full_width": true,
