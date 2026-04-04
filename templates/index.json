@@ -300,7 +300,7 @@
         "usptextlineheight": 22,
         "usptextfontweight": 300,
         "usptextgapbottom": 10,
-        "gapbtwtwousp_m": 10,
+        "gapbtwtwousp_m": 25,
         "usptextfontsize_m": 16,
         "usptextlineheight_m": 22,
         "usptext_ltrspc_m": 0.1,
