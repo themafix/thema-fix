@@ -207,12 +207,10 @@
       "settings": {
         "collection": "luxe-sweaters",
         "products": [
+          "lucille",
           "pamela",
-          "margaret-soft-knit-sweater-with-collar",
-          "elena-warm-knitted-ladies-turtleneck",
-          "donna-elegant-turtleneck-sweater",
-          "marie-cozy-knit-hoodie",
-          "lucille"
+          "rhea",
+          "lorraine"
         ],
         "full_width": false,
         "stack_products": false,
