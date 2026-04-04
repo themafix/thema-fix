@@ -225,10 +225,38 @@
           "settings": {
             "text": "What began as a small idea has grown into a warm community of women who inspire us every day. We’ve always believed that style should be effortless — clothing made with care, comfort, and timeless confidence."
           }
+        },
+        "usp_Ei7jWN": {
+          "type": "usp",
+          "settings": {
+            "text": "Your support over the past two decades means more to us than words can express. This anniversary isn’t just ours — it’s yours too."
+          }
+        },
+        "usp_pV3Y7L": {
+          "type": "usp",
+          "settings": {
+            "text": "To say thank you, we’re celebrating with a special 20-Year Anniversary Sale — up to 80% off select styles."
+          }
+        },
+        "usp_H7dcpB": {
+          "type": "usp",
+          "settings": {
+            "text": "But hurry — favorites are going fast!"
+          }
+        },
+        "usp_iC8kyF": {
+          "type": "usp",
+          "settings": {
+            "text": "From the sisters Madison & Lauren, thank you for being part of our story. ❤️"
+          }
         }
       },
       "block_order": [
-        "usp_dPKRfV"
+        "usp_dPKRfV",
+        "usp_Ei7jWN",
+        "usp_pV3Y7L",
+        "usp_H7dcpB",
+        "usp_iC8kyF"
       ],
       "name": "s-image-text-1",
       "settings": {
