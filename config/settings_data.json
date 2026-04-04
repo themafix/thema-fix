@@ -235,21 +235,13 @@
               "menu": "policys",
               "show_menu_title": true
             }
-          },
-          "text_8UJBbj": {
-            "type": "text",
-            "settings": {
-              "title": "",
-              "content": "<p>MLH Sales LLC<br/>Number 8, The Green, Suite A<br/>Dover, Delaware 19901<br/>United States</p>"
-            }
           }
         },
         "block_order": [
           "text_U7XWWJ",
           "text_ELTeBR",
           "newsletter",
-          "links_zwLmqU",
-          "text_8UJBbj"
+          "links_zwLmqU"
         ],
         "settings": {
           "show_social_media": true,
@@ -277,54 +269,7 @@
         }
       }
     },
-    "content_for_index": [],
-    "blocks": {
-      "17920835415960095625": {
-        "type": "shopify://apps/swatch-king/blocks/variant-swatch-king/0850b1e4-ba30-4a0d-a8f4-f9a939276d7d",
-        "disabled": false,
-        "settings": {
-          "alignment": "left",
-          "swatch_location": "After image",
-          "switch_on_hover": true,
-          "preselect_variant": false
-        }
-      },
-      "11254466806377166470": {
-        "type": "shopify://apps/bf-size-charts/blocks/embed-block/47ee4f2e-eb5e-41af-9beb-e2786646bf2a",
-        "disabled": false,
-        "settings": {}
-      },
-      "855628211100114053": {
-        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": false,
-        "settings": {}
-      },
-      "14952540001915115444": {
-        "type": "shopify://apps/upcart-cart-drawer/blocks/app-embed/af3da5fb-f5f7-40ec-8273-41bf50059d4b",
-        "disabled": false,
-        "settings": {}
-      },
-      "2567389343055140935": {
-        "type": "shopify://apps/microsoft-clarity/blocks/clarity_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
-        "disabled": false,
-        "settings": {}
-      },
-      "17198465164502963513": {
-        "type": "shopify://apps/parcel-panel/blocks/app.embed/fc785c3f-90e0-4c98-a20c-7cde9ba5e4b5",
-        "disabled": false,
-        "settings": {}
-      },
-      "10312807297210203588": {
-        "type": "shopify://apps/aftersell-by-rokt/blocks/utm-triggers/509ec35d-0632-4dfc-a105-fa799cd9d149",
-        "disabled": false,
-        "settings": {}
-      },
-      "2200952712151285029": {
-        "type": "shopify://apps/microsoft-clarity/blocks/brandAgents_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
-        "disabled": false,
-        "settings": {}
-      }
-    }
+    "content_for_index": []
   },
   "presets": {
     "Sound": {
