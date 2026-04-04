@@ -220,29 +220,15 @@
     "s_image_text_1_AtqCAE": {
       "type": "s-image-text-1",
       "blocks": {
-        "usp_z6LW9p": {
+        "usp_dPKRfV": {
           "type": "usp",
           "settings": {
-            "text": "Promotes deep and uninterrupted sleep"
-          }
-        },
-        "usp_4JB94Q": {
-          "type": "usp",
-          "settings": {
-            "text": "Helps you fall asleep faster and easier"
-          }
-        },
-        "usp_7EtALf": {
-          "type": "usp",
-          "settings": {
-            "text": "Encourages restorative REM sleep"
+            "text": "What began as a small idea has grown into a warm community of women who inspire us every day. We’ve always believed that style should be effortless — clothing made with care, comfort, and timeless confidence."
           }
         }
       },
       "block_order": [
-        "usp_z6LW9p",
-        "usp_4JB94Q",
-        "usp_7EtALf"
+        "usp_dPKRfV"
       ],
       "name": "s-image-text-1",
       "settings": {
@@ -292,7 +278,7 @@
         "usptext_ltrspc_m": 0.1,
         "usptextfontweight_m": 400,
         "usptextgapbottom_m": 10,
-        "show_uspicon": true,
+        "show_uspicon": false,
         "svg_size": 20,
         "svg_bordrradius": 150,
         "svg_size_m": 20,
