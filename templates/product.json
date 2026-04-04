@@ -25,10 +25,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "bf_size_charts_block_Beedk8": {
-          "type": "shopify://apps/bf-size-charts/blocks/block/47ee4f2e-eb5e-41af-9beb-e2786646bf2a",
-          "settings": {}
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -94,10 +90,6 @@
             "payment_button_text_color": ""
           }
         },
-        "conversion_bear_trust_badges_widget_FAYNME": {
-          "type": "shopify://apps/conversion-bear-trust-badges/blocks/widget/163a9b59-0ec2-4cb7-bf5c-31408b4a9420",
-          "settings": {}
-        },
         "liquid_z6LpBE": {
           "type": "liquid",
           "disabled": true,
@@ -141,7 +133,6 @@
         }
       },
       "block_order": [
-        "bf_size_charts_block_Beedk8",
         "title",
         "badges",
         "liquid_x7qy3K",
@@ -152,7 +143,6 @@
         "payment_terms",
         "liquid_4X8dFH",
         "buy_buttons",
-        "conversion_bear_trust_badges_widget_FAYNME",
         "liquid_z6LpBE",
         "liquid_rEbM49",
         "feature_rating_e9piMR",
@@ -278,19 +268,19 @@
     "featured_collection_fFfDyi": {
       "type": "featured-collection",
       "settings": {
-        "collection": "apr-vrouwen",
+        "collection": "",
         "products": [
           "pamela",
-          "marie-cozy-knit-hoodie",
-          "bailey-sweater",
-          "clara-classic-mary-jane-shoes"
+          "classic-top",
+          "rhea",
+          "lorraine"
         ],
         "full_width": true,
         "stack_products": false,
         "show_progress_bar": false,
         "products_count": 10,
         "products_per_row_mobile": "2",
-        "products_per_row_desktop": 2,
+        "products_per_row_desktop": 4,
         "subheading": "",
         "title": "Combine & get up to 20% extra off",
         "content": "",
