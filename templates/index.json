@@ -293,7 +293,7 @@
         "bodytext_ltrspc_m": 0.1,
         "bodytextfontweight_m": 300,
         "bodytextspacebottom_m": 15,
-        "gapbtwtwousp": 10,
+        "gapbtwtwousp": 25,
         "usptexttransform": "none",
         "usptext_ltrspc": 0.1,
         "usptextfontsize": 18,
