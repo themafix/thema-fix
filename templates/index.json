@@ -166,42 +166,6 @@
         "heading_gradient": ""
       }
     },
-    "image_with_text_overlay_J7UP3j": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "heading_AHryTL": {
-          "type": "heading",
-          "settings": {
-            "text": "About Wilsons New York",
-            "heading_tag": "h3"
-          }
-        },
-        "richtext_f6nAcb": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p><strong>Wilsons New York</strong> began as a small idea built on a close family bond. For over ten years, we’ve been creating a space where timeless style, comfort, and authenticity come together. <strong>We’re still hands-on every day</strong>, carefully selecting pieces for women who appreciate simplicity, confidence, and effortless elegance.</p><p>Now, we’re celebrating our anniversary with the biggest event of the season:<strong>up to 80% off across all collections</strong>. Over the years, countless women have found their favorite pieces here — dresses that made them feel radiant, shoes that carried them with confidence, and timeless styles that became part of their story ♥</p><p>Celebrate with us and enjoy these exclusive anniversary savings, available for a limited time only.</p><p>Thank you for your support!</p><p><strong>Forever grateful,</strong>— The sisters Madison & Lauren</p><p>  </p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_AHryTL",
-        "richtext_f6nAcb"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/haal-op-de-achtergrond-het-logo-weg-en-z_hG566IZmQO20qFaM-zfB-w_iL_eXY93T5uc_Xm7EeutNg.jpg",
-        "mobile_image": "shopify://shop_images/haal-op-de-achtergrond-het-logo-weg-en-z_hG566IZmQO20qFaM-zfB-w_iL_eXY93T5uc_Xm7EeutNg_66ec045a-ea7c-4bb3-be5b-f3440431b251.jpg",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
-      }
-    },
     "featured_collection_3Uqkx8": {
       "type": "featured-collection",
       "settings": {
@@ -474,7 +438,6 @@
     "slideshow_TJ8KBa",
     "rich_text_qrpn8Q",
     "collection-list",
-    "image_with_text_overlay_J7UP3j",
     "featured_collection_3Uqkx8",
     "featured_collection_AyERrT",
     "featured_collection_C9XFgE",
