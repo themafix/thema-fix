@@ -103,10 +103,10 @@
         "collection_7N9LJj": {
           "type": "collection",
           "settings": {
-            "collection": "luxe-sweaters",
+            "collection": "tops",
             "subheading": "",
             "title": "",
-            "url": "shopify://collections/luxe-sweaters",
+            "url": "https://wilsons-newyork.com/collections/tops",
             "heading_tag": "h4",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
