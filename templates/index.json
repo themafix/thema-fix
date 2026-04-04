@@ -237,8 +237,12 @@
       "type": "featured-collection",
       "name": "Featured collection",
       "settings": {
-        "collection": "",
-        "products": [],
+        "collection": "tops",
+        "products": [
+          "lorraine",
+          "rosemary",
+          "classic-top"
+        ],
         "full_width": true,
         "stack_products": true,
         "show_progress_bar": false,
