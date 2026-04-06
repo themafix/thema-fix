@@ -438,6 +438,9 @@
       },
       "delivery_options": {
         "free_total_label": "Free Premium Shipping"
+      },
+      "payment_summary": {
+        "free_label": "Free Premium Shipping"
       }
     }
   },
