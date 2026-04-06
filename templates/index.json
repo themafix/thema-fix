@@ -741,6 +741,10 @@
         "ai_gen_block_d8909d1_FPL97p"
       ],
       "settings": {}
+    },
+    "177550432242402607": {
+      "type": "_blocks",
+      "settings": {}
     }
   },
   "order": [
@@ -756,6 +760,7 @@
     "featured_collection_JraPtF",
     "media-grid",
     "faq",
-    "1775504061cb64ff1c"
+    "1775504061cb64ff1c",
+    "177550432242402607"
   ]
 }
