@@ -421,7 +421,9 @@
     "checkout": {
       "order_summary": {
         "enter_shipping_address": "Free Premium Shipping",
-        "subtotal_label": "Subtotal"
+        "subtotal_label": "Subtotal",
+        "free_total_label": "Free Premium Shipping",
+        "free_shipping_total_label": "Free Premium Shipping"
       },
       "general": {
         "pay_now_button_label": "Complete Order"
@@ -433,6 +435,9 @@
       },
       "shipping_errors": {
         "empty_state": "Free Premium Shipping + Track & Trace"
+      },
+      "delivery_options": {
+        "free_total_label": "Free Premium Shipping"
       }
     }
   },
