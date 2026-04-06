@@ -437,7 +437,7 @@
         "empty_state": "Free Premium Shipping + Track & Trace"
       },
       "delivery_options": {
-        "free_total_label": "Free Premium Shipping"
+        "free_total_label": "Free"
       },
       "payment_summary": {
         "free_label": "Free Premium Shipping"
