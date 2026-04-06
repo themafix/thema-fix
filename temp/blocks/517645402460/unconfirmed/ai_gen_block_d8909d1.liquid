@@ -1,6 +1,191 @@
+{% doc %}
+  @prompt
+    Change the sale badge on product cards to show the discount percentage (e.g. "Save 20%") instead of the fixed dollar amount saved (e.g. "Save $150.00"). The badge should dynamically calculate and display the percentage off based on the compare-at price and the current price.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% liquid
+  assign has_discount = false
+  assign discount_percentage = 0
+
+  if product.compare_at_price > product.price
+    assign has_discount = true
+    assign price_difference = product.compare_at_price | minus: product.price
+    assign discount_percentage = price_difference | times: 100.0 | divided_by: product.compare_at_price | round
+  endif
+%}
+
+{% style %}
+  .ai-sale-badge-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: {{ block.settings.badge_padding_vertical }}px {{ block.settings.badge_padding_horizontal }}px;
+    background-color: {{ block.settings.badge_background_color }};
+    color: {{ block.settings.badge_text_color }};
+    font-size: {{ block.settings.badge_font_size }}px;
+    font-weight: {{ block.settings.badge_font_weight }};
+    border-radius: {{ block.settings.badge_border_radius }}px;
+    text-transform: {{ block.settings.badge_text_transform }};
+    letter-spacing: 0.5px;
+    line-height: 1;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+  }
+
+  .ai-sale-badge-{{ ai_gen_id }}--hidden {
+    display: none;
+  }
+{% endstyle %}
+
+<div
+  class="ai-sale-badge-{{ ai_gen_id }} {% unless has_discount %}ai-sale-badge-{{ ai_gen_id }}--hidden{% endunless %}"
+  {{ block.shopify_attributes }}
+>
+  {% if has_discount %}
+    {{ block.settings.badge_prefix }} {{ discount_percentage }}{{ block.settings.badge_suffix }}
+  {% endif %}
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Sale badge percentage",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Badge text"
+    },
+    {
+      "type": "text",
+      "id": "badge_prefix",
+      "label": "Prefix text",
+      "default": "Save"
+    },
+    {
+      "type": "text",
+      "id": "badge_suffix",
+      "label": "Suffix text",
+      "default": "%"
+    },
+    {
+      "type": "header",
+      "content": "Badge style"
+    },
+    {
+      "type": "color",
+      "id": "badge_background_color",
+      "label": "Background color",
+      "default": "#f83a3a"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "badge_font_size",
+      "label": "Font size",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "select",
+      "id": "badge_font_weight",
+      "label": "Font weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "600"
+    },
+    {
+      "type": "select",
+      "id": "badge_text_transform",
+      "label": "Text transform",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "uppercase",
+          "label": "Uppercase"
+        },
+        {
+          "value": "lowercase",
+          "label": "Lowercase"
+        },
+        {
+          "value": "capitalize",
+          "label": "Capitalize"
+        }
+      ],
+      "default": "uppercase"
+    },
+    {
+      "type": "range",
+      "id": "badge_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "badge_padding_vertical",
+      "label": "Vertical padding",
+      "min": 2,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 6
+    },
+    {
+      "type": "range",
+      "id": "badge_padding_horizontal",
+      "label": "Horizontal padding",
+      "min": 4,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sale badge percentage"
+    }
+  ]
+}
 {% endschema %}
