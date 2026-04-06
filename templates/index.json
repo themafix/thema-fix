@@ -715,6 +715,32 @@
         "accordion_background": "",
         "accordion_text_color": ""
       }
+    },
+    "1775504061cb64ff1c": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_d8909d1_FPL97p": {
+          "type": "ai_gen_block_d8909d1",
+          "settings": {
+            "badge_prefix": "Save",
+            "badge_suffix": "%",
+            "badge_background_color": "#f83a3a",
+            "badge_text_color": "#ffffff",
+            "badge_font_size": 12,
+            "badge_font_weight": "600",
+            "badge_text_transform": "uppercase",
+            "badge_border_radius": 4,
+            "badge_padding_vertical": 6,
+            "badge_padding_horizontal": 10,
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_d8909d1_FPL97p"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -729,6 +755,7 @@
     "featured_collection_C9XFgE",
     "featured_collection_JraPtF",
     "media-grid",
-    "faq"
+    "faq",
+    "1775504061cb64ff1c"
   ]
 }
