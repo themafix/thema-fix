@@ -13,14 +13,18 @@
       "type": "main-list-collections",
       "settings": {
         "collections": [
-          "luxe-sweaters",
-          "every-day-jackets-blazers",
-          "bags",
-          "winter-dresses",
+          "tops",
+          "summer-dress-collection",
+          "leather-bags",
+          "overalls",
           "footwear",
-          "pants",
+          "blouses",
           "sets",
-          "blouses"
+          "loafers",
+          "heels",
+          "artistic-printed-shirts",
+          "orthopedic-sandals",
+          "pants"
         ],
         "collections_per_row": 3,
         "text_color": "#ffffff",
