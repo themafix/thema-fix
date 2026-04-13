@@ -515,13 +515,8 @@
       "type": "featured-collection",
       "name": "Featured collection",
       "settings": {
-        "collection": "dresses",
-        "products": [
-          "karynthe",
-          "zhyriann",
-          "elanyssah",
-          "alyszeah"
-        ],
+        "collection": "summer-dress-collection",
+        "products": [],
         "full_width": false,
         "stack_products": false,
         "show_progress_bar": false,
