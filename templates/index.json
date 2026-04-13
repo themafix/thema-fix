@@ -68,8 +68,8 @@
         "nav_item_jgYMXp": {
           "type": "nav_item",
           "settings": {
-            "label": "dresses",
-            "link": "shopify://collections/dresses",
+            "label": "summer dresses",
+            "link": "shopify://collections/summer-dress-collection",
             "is_active": false
           }
         },
