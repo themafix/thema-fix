@@ -33,6 +33,14 @@
             "is_active": false
           }
         },
+        "nav_item_jgYMXp": {
+          "type": "nav_item",
+          "settings": {
+            "label": "summer dresses",
+            "link": "shopify://collections/summer-dress-collection",
+            "is_active": false
+          }
+        },
         "nav_item_UnF4UL": {
           "type": "nav_item",
           "settings": {
@@ -62,14 +70,6 @@
           "settings": {
             "label": "spring sets",
             "link": "shopify://collections/sets",
-            "is_active": false
-          }
-        },
-        "nav_item_jgYMXp": {
-          "type": "nav_item",
-          "settings": {
-            "label": "summer dresses",
-            "link": "shopify://collections/summer-dress-collection",
             "is_active": false
           }
         },
@@ -124,11 +124,11 @@
       },
       "block_order": [
         "nav_item_nkcKYn",
+        "nav_item_jgYMXp",
         "nav_item_UnF4UL",
         "nav_item_bJFUHj",
         "nav_item_NTEwb7",
         "nav_item_3zn8qa",
-        "nav_item_jgYMXp",
         "nav_item_3eXpfW",
         "nav_item_njEHGJ",
         "nav_item_Tr9qik",
